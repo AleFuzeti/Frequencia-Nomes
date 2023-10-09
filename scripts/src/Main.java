@@ -1,48 +1,38 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import com.fasterxml.jackson.databind.SerializationFeature;
+import java.io.*;
+import java.net.*;
+import com.fasterxml.jackson.databind.*;
 
 public class Main {
 
+    // Função para fazer a solicitação HTTP e retornar a resposta como uma String
+    private static String fetchDataFromAPI(String apiUrl) throws IOException {
+        URL url = new URL(apiUrl);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+
+        StringBuilder response = new StringBuilder();
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+        }
+
+        return response.toString();
+    }
+
     public static void main(String[] args) {
         try {
+            // Configurar o ObjectMapper para a formatação com identação
+            ObjectMapper prettyObjectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+
             // URL da API para obter as macrorregiões
             String regioesUrl = "https://servicodados.ibge.gov.br/api/v1/localidades/regioes";
-
-            // Criação da URL e conexão para obter as macrorregiões
-            URL regioesObj = new URL(regioesUrl);
-            HttpURLConnection regioesCon = (HttpURLConnection) regioesObj.openConnection();
-            regioesCon.setRequestMethod("GET");
-
-            // Leitura da resposta da API para obter as macrorregiões
-            BufferedReader regioesIn = new BufferedReader(new InputStreamReader(regioesCon.getInputStream()));
-            StringBuilder regioesResponse = new StringBuilder();
-            String regioesInputLine;
-
-            while ((regioesInputLine = regioesIn.readLine()) != null) {
-                regioesResponse.append(regioesInputLine);
-            }
-
-            regioesIn.close();
-
-            // Configurar o ObjectMapper para a formatação com identação
-            ObjectMapper prettyObjectMapper = new ObjectMapper();
-            prettyObjectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-
-            // Converter a resposta JSON em um array de objetos JSON
-            JsonNode regioesJsonArray = prettyObjectMapper.readTree(regioesResponse.toString());
+            String regioesResponse = fetchDataFromAPI(regioesUrl);
+            JsonNode regioesJsonArray = prettyObjectMapper.readTree(regioesResponse);
 
             // Caminho para a pasta de saída (uma pasta acima de src)
-            String outputFolderPath = "../output";
-
-            // Verificar se a pasta de saída existe e criá-la se não existir
+            String outputFolderPath = "output";
             File outputFolder = new File(outputFolderPath);
             if (!outputFolder.exists()) {
                 outputFolder.mkdirs();
@@ -50,11 +40,9 @@ public class Main {
 
             // Salvar os dados das macrorregiões em um arquivo JSON com identação
             String regioesOutputPath = outputFolderPath + "/regioes.json";
-            FileWriter regioesFileWriter = new FileWriter(regioesOutputPath);
-            ObjectWriter regioesWriter = prettyObjectMapper.writerWithDefaultPrettyPrinter();
-            regioesWriter.writeValue(regioesFileWriter, regioesJsonArray);
-            regioesFileWriter.close();
-
+            try (FileWriter regioesFileWriter = new FileWriter(regioesOutputPath)) {
+                prettyObjectMapper.writeValue(regioesFileWriter, regioesJsonArray);
+            }
             System.out.println("Dados das macrorregiões salvos em " + regioesOutputPath);
 
             // URL da API para obter os estados de todas as macrorregiões (IDs 1, 2, 3, 4, 5)
