@@ -32,7 +32,7 @@ public class Main {
             JsonNode regioesJsonArray = prettyObjectMapper.readTree(regioesResponse);
 
             // Caminho para a pasta de saída (uma pasta acima de src)
-            String outputFolderPath = "output";
+            String outputFolderPath = "./output";
             File outputFolder = new File(outputFolderPath);
             if (!outputFolder.exists()) {
                 outputFolder.mkdirs();
