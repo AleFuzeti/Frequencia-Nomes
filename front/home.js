@@ -1,48 +1,62 @@
 $(document).ready(function () {
     // Popule a lista de estados (substitua com seus dados reais)
-    var states = [
-        { id: 1, name: 'Paraná' },
-        { id: 2, name: 'Santa Catarina' },
-        // Adicione mais estados conforme necessário
-    ];
+    var states = [];
+    var cities = [];
 
-    var cities = [
-        // Adicione as cidades correspondentes aos estados
-        { stateId: 1, id: 101, name: 'Arapongas' },
-        { stateId: 1, id: 102, name: 'Londrina' },
-        { stateId: 1, id: 103, name: 'Rolândia' },
-        { stateId: 2, id: 201, name: 'Blumenau' },
-        { stateId: 2, id: 202, name: 'Florianópolis' },
-        // Adicione mais cidades conforme necessário
-    ];
+    // Carregue os estados do arquivo JSON usando AJAX
+    $.ajax({
+        url: '../dados_tratados/estados_tratados.json',
+        dataType: 'json',
+        success: function (data) {
+            // Atribua os dados carregados à variável states
+            states = data;
 
-    // Popule a lista de estados no elemento select
-    var stateSelect = $('#addressEstado');
-    states.forEach(function (state) {
-        stateSelect.append('<option value="' + state.id + '">' + state.name + '</option>');
-    });
+            // Popule a lista de estados no elemento select
+            var stateSelect = $('#addressEstado');
+            states.forEach(function (state) {
+                stateSelect.append('<option value="' + state.id + '">' + state.nome + '</option>');
+            });
 
-    // Atualize as cidades quando um estado for selecionado
-    stateSelect.on('change', function () {
-        setCities();
+            // Adicione o manipulador de mudança para atualizar as cidades
+            stateSelect.on('change', function () {
+                setCities();
+            });
+        },
+        error: function (error) {
+            console.error('Erro ao carregar estados:', error);
+        }
     });
 
     // Função para definir as cidades
     function setCities() {
-        var stateId = stateSelect.val();
+        var stateId = $('#addressEstado').val();
 
-        // Filtrar cidades pelo estado selecionado
-        var filteredCities = cities.filter(function (city) {
-            return city.stateId == stateId;
-        });
+        // Carregue as cidades do arquivo JSON usando AJAX
+        $.ajax({
+            url: '../dados_tratados/municipios_tratados.json',
+            dataType: 'json',
+            success: function (data) {
+                // Atribua os dados carregados à variável cities
+                cities = data;
 
-        // Popule a lista de cidades no elemento select
-        var citySelect = $('#addressCidade');
-        citySelect.empty(); // Limpe as opções anteriores
-        citySelect.append('<option value="">Selecione</option>'); // Adicione a opção padrão
+                // Filtrar cidades pelo estado selecionado
+                var filteredCities = cities.filter(function (city) {
+                    // Verifique se os primeiros dígitos do ID da cidade correspondem ao ID do estado
+                    return city.id.toString().startsWith(stateId);
+                });
 
-        filteredCities.forEach(function (city) {
-            citySelect.append('<option value="' + city.id + '">' + city.name + '</option>');
+                // Popule a lista de cidades no elemento select
+                var citySelect = $('#addressCidade');
+                citySelect.empty(); // Limpe as opções anteriores
+                citySelect.append('<option value="">Selecione</option>'); // Adicione a opção padrão
+
+                filteredCities.forEach(function (city) {
+                    citySelect.append('<option value="' + city.id + '">' + city.nome + '</option>');
+                });
+            },
+            error: function (error) {
+                console.error('Erro ao carregar cidades:', error);
+            }
         });
     }
 
