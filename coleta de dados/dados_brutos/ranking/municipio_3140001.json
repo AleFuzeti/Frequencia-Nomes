@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3140001",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 3693,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 1843,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 937,
+    "ranking" : 3
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 717,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 670,
+    "ranking" : 5
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 631,
+    "ranking" : 6
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 389,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 349,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 333,
+    "ranking" : 9
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 311,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 299,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 279,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 245,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 216,
+    "ranking" : 14
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 213,
+    "ranking" : 15
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 207,
+    "ranking" : 16
+  }, {
+    "nome" : "EFIGENIA",
+    "frequencia" : 204,
+    "ranking" : 17
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 202,
+    "ranking" : 18
+  }, {
+    "nome" : "GERALDA",
+    "frequencia" : 193,
+    "ranking" : 19
+  }, {
+    "nome" : "MARCIO",
+    "frequencia" : 186,
+    "ranking" : 20
+  } ]
+} ]

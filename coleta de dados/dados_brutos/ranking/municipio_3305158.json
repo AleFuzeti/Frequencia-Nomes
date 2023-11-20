@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3305158",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1182,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 536,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 356,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 331,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 256,
+    "ranking" : 5
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 250,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 234,
+    "ranking" : 7
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 177,
+    "ranking" : 8
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 154,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 148,
+    "ranking" : 10
+  }, {
+    "nome" : "JORGE",
+    "frequencia" : 144,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 143,
+    "ranking" : 12
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 121,
+    "ranking" : 13
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 118,
+    "ranking" : 14
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 106,
+    "ranking" : 16
+  }, {
+    "nome" : "ADRIANA",
+    "frequencia" : 106,
+    "ranking" : 15
+  }, {
+    "nome" : "VITORIA",
+    "frequencia" : 100,
+    "ranking" : 17
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 99,
+    "ranking" : 18
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 96,
+    "ranking" : 19
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 95,
+    "ranking" : 20
+  } ]
+} ]

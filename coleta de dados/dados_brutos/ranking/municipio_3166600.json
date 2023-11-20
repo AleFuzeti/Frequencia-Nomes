@@ -1,0 +1,29 @@
+[ {
+  "localidade" : "3166600",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 67,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 36,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 23,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 17,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 10,
+    "ranking" : 5
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 10,
+    "ranking" : 6
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4114906",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 531,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 262,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 221,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 125,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 106,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 86,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 85,
+    "ranking" : 7
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 70,
+    "ranking" : 8
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 69,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 67,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 64,
+    "ranking" : 11
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 54,
+    "ranking" : 12
+  }, {
+    "nome" : "MARCIA",
+    "frequencia" : 49,
+    "ranking" : 13
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 47,
+    "ranking" : 14
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 41,
+    "ranking" : 15
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 39,
+    "ranking" : 17
+  }, {
+    "nome" : "JOAQUIM",
+    "frequencia" : 39,
+    "ranking" : 16
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 38,
+    "ranking" : 18
+  }, {
+    "nome" : "SUELI",
+    "frequencia" : 34,
+    "ranking" : 19
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 32,
+    "ranking" : 21
+  } ]
+} ]

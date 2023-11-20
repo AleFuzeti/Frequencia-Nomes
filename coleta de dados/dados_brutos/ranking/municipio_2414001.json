@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2414001",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1804,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 1116,
+    "ranking" : 2
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 641,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 396,
+    "ranking" : 4
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 291,
+    "ranking" : 5
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 254,
+    "ranking" : 6
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 211,
+    "ranking" : 7
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 169,
+    "ranking" : 8
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 165,
+    "ranking" : 9
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 140,
+    "ranking" : 10
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 131,
+    "ranking" : 11
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 113,
+    "ranking" : 12
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 111,
+    "ranking" : 13
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 111,
+    "ranking" : 14
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 76,
+    "ranking" : 15
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 65,
+    "ranking" : 16
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 61,
+    "ranking" : 17
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 61,
+    "ranking" : 18
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 51,
+    "ranking" : 20
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 51,
+    "ranking" : 19
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2511301",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 2081,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 1047,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 544,
+    "ranking" : 3
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 412,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 377,
+    "ranking" : 5
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 249,
+    "ranking" : 6
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 230,
+    "ranking" : 7
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 220,
+    "ranking" : 8
+  }, {
+    "nome" : "DAMIAO",
+    "frequencia" : 183,
+    "ranking" : 9
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 169,
+    "ranking" : 10
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 135,
+    "ranking" : 11
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 133,
+    "ranking" : 12
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 127,
+    "ranking" : 13
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 127,
+    "ranking" : 14
+  }, {
+    "nome" : "DAMIANA",
+    "frequencia" : 109,
+    "ranking" : 15
+  }, {
+    "nome" : "JOANA",
+    "frequencia" : 94,
+    "ranking" : 16
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 84,
+    "ranking" : 17
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 81,
+    "ranking" : 18
+  }, {
+    "nome" : "CICERO",
+    "frequencia" : 79,
+    "ranking" : 19
+  }, {
+    "nome" : "GERALDA",
+    "frequencia" : 77,
+    "ranking" : 20
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3139201",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1548,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 832,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 409,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 342,
+    "ranking" : 4
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 236,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 206,
+    "ranking" : 6
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 134,
+    "ranking" : 7
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 133,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 127,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 119,
+    "ranking" : 10
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 108,
+    "ranking" : 11
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 99,
+    "ranking" : 12
+  }, {
+    "nome" : "GERALDA",
+    "frequencia" : 71,
+    "ranking" : 13
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 66,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 66,
+    "ranking" : 15
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 61,
+    "ranking" : 16
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 58,
+    "ranking" : 17
+  }, {
+    "nome" : "ADRIANA",
+    "frequencia" : 58,
+    "ranking" : 18
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 57,
+    "ranking" : 19
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 54,
+    "ranking" : 20
+  } ]
+} ]

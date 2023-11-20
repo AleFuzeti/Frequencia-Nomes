@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5107958",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 3872,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 2219,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 1340,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 1145,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 864,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 553,
+    "ranking" : 6
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 538,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 528,
+    "ranking" : 8
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 507,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 494,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 473,
+    "ranking" : 11
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 402,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 368,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 359,
+    "ranking" : 14
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 345,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 286,
+    "ranking" : 16
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 283,
+    "ranking" : 17
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 271,
+    "ranking" : 18
+  }, {
+    "nome" : "AMANDA",
+    "frequencia" : 262,
+    "ranking" : 19
+  }, {
+    "nome" : "GUSTAVO",
+    "frequencia" : 260,
+    "ranking" : 20
+  } ]
+} ]

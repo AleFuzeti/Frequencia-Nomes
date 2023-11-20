@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3144508",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 581,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 338,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 197,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 175,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 155,
+    "ranking" : 5
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 129,
+    "ranking" : 6
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 120,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 107,
+    "ranking" : 8
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 85,
+    "ranking" : 9
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 81,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 74,
+    "ranking" : 11
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 66,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 64,
+    "ranking" : 13
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 57,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 52,
+    "ranking" : 15
+  }, {
+    "nome" : "NAZARE",
+    "frequencia" : 51,
+    "ranking" : 16
+  }, {
+    "nome" : "HEITOR",
+    "frequencia" : 50,
+    "ranking" : 17
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 41,
+    "ranking" : 18
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 38,
+    "ranking" : 19
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 38,
+    "ranking" : 20
+  } ]
+} ]

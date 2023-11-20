@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2206407",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1238,
+    "ranking" : 1
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 425,
+    "ranking" : 2
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 398,
+    "ranking" : 3
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 374,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 218,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 215,
+    "ranking" : 6
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 172,
+    "ranking" : 7
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 153,
+    "ranking" : 8
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 131,
+    "ranking" : 9
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 94,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 82,
+    "ranking" : 11
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 79,
+    "ranking" : 12
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 70,
+    "ranking" : 13
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 66,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 61,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 60,
+    "ranking" : 16
+  }, {
+    "nome" : "RAIMUNDA",
+    "frequencia" : 49,
+    "ranking" : 17
+  }, {
+    "nome" : "JOANA",
+    "frequencia" : 48,
+    "ranking" : 18
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 33,
+    "ranking" : 19
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 29,
+    "ranking" : 21
+  } ]
+} ]

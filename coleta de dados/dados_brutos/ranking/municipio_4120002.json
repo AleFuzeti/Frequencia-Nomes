@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4120002",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 993,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 472,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 353,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 224,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 169,
+    "ranking" : 5
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 134,
+    "ranking" : 6
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 106,
+    "ranking" : 7
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 103,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 103,
+    "ranking" : 8
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 102,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 94,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 85,
+    "ranking" : 12
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 83,
+    "ranking" : 13
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 76,
+    "ranking" : 14
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 67,
+    "ranking" : 15
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 64,
+    "ranking" : 16
+  }, {
+    "nome" : "FERNANDO",
+    "frequencia" : 61,
+    "ranking" : 17
+  }, {
+    "nome" : "GUSTAVO",
+    "frequencia" : 59,
+    "ranking" : 18
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 53,
+    "ranking" : 19
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 53,
+    "ranking" : 20
+  } ]
+} ]

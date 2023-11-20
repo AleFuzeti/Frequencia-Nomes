@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "1502756",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 2071,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 798,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 729,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 442,
+    "ranking" : 4
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 415,
+    "ranking" : 5
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 410,
+    "ranking" : 6
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 289,
+    "ranking" : 7
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 260,
+    "ranking" : 8
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 239,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 218,
+    "ranking" : 10
+  }, {
+    "nome" : "RAIMUNDA",
+    "frequencia" : 215,
+    "ranking" : 11
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 180,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 175,
+    "ranking" : 13
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 165,
+    "ranking" : 14
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 154,
+    "ranking" : 15
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 136,
+    "ranking" : 16
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 120,
+    "ranking" : 17
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 112,
+    "ranking" : 18
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 108,
+    "ranking" : 19
+  }, {
+    "nome" : "FABIO",
+    "frequencia" : 92,
+    "ranking" : 20
+  } ]
+} ]

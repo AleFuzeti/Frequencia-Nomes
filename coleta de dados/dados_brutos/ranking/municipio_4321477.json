@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4321477",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 119,
+    "ranking" : 1
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 80,
+    "ranking" : 2
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 58,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 51,
+    "ranking" : 4
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 44,
+    "ranking" : 5
+  }, {
+    "nome" : "MARLI",
+    "frequencia" : 44,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 38,
+    "ranking" : 7
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 34,
+    "ranking" : 8
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 33,
+    "ranking" : 9
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 31,
+    "ranking" : 10
+  }, {
+    "nome" : "MARLENE",
+    "frequencia" : 31,
+    "ranking" : 11
+  }, {
+    "nome" : "LUCIA",
+    "frequencia" : 30,
+    "ranking" : 12
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 28,
+    "ranking" : 14
+  }, {
+    "nome" : "NELSON",
+    "frequencia" : 28,
+    "ranking" : 13
+  }, {
+    "nome" : "ARI",
+    "frequencia" : 27,
+    "ranking" : 16
+  }, {
+    "nome" : "LEANDRO",
+    "frequencia" : 27,
+    "ranking" : 15
+  }, {
+    "nome" : "JAIR",
+    "frequencia" : 27,
+    "ranking" : 17
+  }, {
+    "nome" : "TERESINHA",
+    "frequencia" : 26,
+    "ranking" : 20
+  }, {
+    "nome" : "MARCIA",
+    "frequencia" : 26,
+    "ranking" : 19
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 26,
+    "ranking" : 18
+  } ]
+} ]

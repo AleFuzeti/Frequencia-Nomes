@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2515401",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1183,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 879,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 200,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 156,
+    "ranking" : 4
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 133,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 127,
+    "ranking" : 6
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 119,
+    "ranking" : 7
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 107,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 77,
+    "ranking" : 9
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 62,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 60,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 52,
+    "ranking" : 12
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 51,
+    "ranking" : 13
+  }, {
+    "nome" : "DAMIAO",
+    "frequencia" : 51,
+    "ranking" : 14
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 46,
+    "ranking" : 15
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 43,
+    "ranking" : 16
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 43,
+    "ranking" : 18
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 43,
+    "ranking" : 17
+  }, {
+    "nome" : "INACIO",
+    "frequencia" : 41,
+    "ranking" : 19
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 36,
+    "ranking" : 20
+  } ]
+} ]

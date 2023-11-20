@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4128005",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1434,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 687,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 501,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 306,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 282,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 191,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 166,
+    "ranking" : 7
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 159,
+    "ranking" : 8
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 159,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 134,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 128,
+    "ranking" : 11
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 124,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 110,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 98,
+    "ranking" : 14
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 80,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCIA",
+    "frequencia" : 79,
+    "ranking" : 16
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 78,
+    "ranking" : 17
+  }, {
+    "nome" : "GUILHERME",
+    "frequencia" : 77,
+    "ranking" : 18
+  }, {
+    "nome" : "GUSTAVO",
+    "frequencia" : 76,
+    "ranking" : 19
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 75,
+    "ranking" : 20
+  } ]
+} ]

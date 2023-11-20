@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3139607",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1544,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 798,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 432,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 329,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 249,
+    "ranking" : 5
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 197,
+    "ranking" : 6
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 179,
+    "ranking" : 7
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 164,
+    "ranking" : 8
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 154,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 145,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 142,
+    "ranking" : 11
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 137,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 125,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 104,
+    "ranking" : 14
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 93,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 91,
+    "ranking" : 16
+  }, {
+    "nome" : "MARLENE",
+    "frequencia" : 88,
+    "ranking" : 17
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 87,
+    "ranking" : 18
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 84,
+    "ranking" : 19
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 83,
+    "ranking" : 22
+  } ]
+} ]

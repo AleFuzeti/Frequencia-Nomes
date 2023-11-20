@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2921302",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 687,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 301,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 225,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 149,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 146,
+    "ranking" : 5
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 84,
+    "ranking" : 6
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 80,
+    "ranking" : 7
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 60,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 60,
+    "ranking" : 8
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 53,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 51,
+    "ranking" : 11
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 48,
+    "ranking" : 12
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 48,
+    "ranking" : 13
+  }, {
+    "nome" : "LEANDRO",
+    "frequencia" : 46,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 41,
+    "ranking" : 15
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 38,
+    "ranking" : 16
+  }, {
+    "nome" : "ROQUE",
+    "frequencia" : 38,
+    "ranking" : 17
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 35,
+    "ranking" : 18
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 34,
+    "ranking" : 19
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 33,
+    "ranking" : 20
+  } ]
+} ]

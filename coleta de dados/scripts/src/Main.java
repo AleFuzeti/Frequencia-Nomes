@@ -2,12 +2,21 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import java.io.IOException;
+import java.util.Map;
+import java.util.HashMap;
+
 public class Main {
 
     public static void main(String[] args) {
         try {
+            // Adicione no início do método main
+            List<JsonNode> batchData = new ArrayList<>();
+
             ObjectMapper prettyObjectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
 
             String regioesUrl = "https://servicodados.ibge.gov.br/api/v1/localidades/regioes";
@@ -54,6 +63,49 @@ public class Main {
             String municipiosOutputPath = outputFolderPath + "/municipios_todas_ufs.json";
             FileUtil.writeJsonToFile(municipiosOutputPath, prettyObjectMapper.writeValueAsString(prettyObjectMapper.readTree(municipiosResponse)));
             System.out.println("Dados de todos os municípios salvos em " + municipiosOutputPath);
+
+            // Ler dados dos municípios de todas as UFs
+            JsonNode municipiosJsonArray = prettyObjectMapper.readTree(municipiosResponse);
+
+            // Lógica para iterar sobre os municípios e fazer solicitações em lotes
+            int batchSize = 100;
+            int totalMunicipios = municipiosJsonArray.size();
+            int batches = (int) Math.ceil((double) totalMunicipios / batchSize);
+
+            batchData.clear();
+            for (int i = 0; i < 5570; i++) {
+                JsonNode municipio = municipiosJsonArray.get(i);
+                int municipioId = municipio.get("id").asInt();
+
+                // URL para a solicitação GET do município atual
+                String municipioUrl = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=" + municipioId;
+
+                boolean dadosObtidos = false;
+                int tentativas = 0;
+
+                while (!dadosObtidos && tentativas < 1000) { // Limite de 100 tentativas
+                    try {
+                        // Lógica para fazer a solicitação GET com o ID do município atual
+                        String municipioResponse = HttpUtil.fetchDataFromAPI(municipioUrl);
+
+                        // Salvar os dados do município em um arquivo JSON com identação
+                        String municipioOutputPath = outputFolderPath + "/ranking/municipio_" + municipioId + ".json";
+                        FileUtil.writeJsonToFile(municipioOutputPath, prettyObjectMapper.writeValueAsString(prettyObjectMapper.readTree(municipioResponse)));
+                        System.out.println("Dados do município " + i + " salvos em " + municipioOutputPath);
+
+                        dadosObtidos = true; // Indica que os dados foram obtidos com sucesso
+                    } catch (IOException e) {
+                        tentativas++;
+                        System.err.println("Erro ao obter dados para o município " + municipioId + ". Tentativa " + tentativas + ": " + e.getMessage());
+                        // Adicione lógica de tratamento de erro aqui, se necessário.
+                    }
+                }
+
+                if (!dadosObtidos) {
+                    System.err.println("Não foi possível obter dados para o município " + municipioId + " após 3 tentativas.");
+                    // Adicione lógica de tratamento adicional, se necessário.
+                }
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

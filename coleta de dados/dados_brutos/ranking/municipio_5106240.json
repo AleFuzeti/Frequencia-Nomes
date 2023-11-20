@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5106240",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 304,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 198,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 143,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 127,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 92,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 81,
+    "ranking" : 6
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 73,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 63,
+    "ranking" : 8
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 57,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 54,
+    "ranking" : 10
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 51,
+    "ranking" : 11
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 47,
+    "ranking" : 12
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 43,
+    "ranking" : 13
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 41,
+    "ranking" : 14
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 38,
+    "ranking" : 15
+  }, {
+    "nome" : "ANDRE",
+    "frequencia" : 36,
+    "ranking" : 16
+  }, {
+    "nome" : "ANDERSON",
+    "frequencia" : 35,
+    "ranking" : 17
+  }, {
+    "nome" : "ADRIANA",
+    "frequencia" : 32,
+    "ranking" : 18
+  }, {
+    "nome" : "JULIANA",
+    "frequencia" : 30,
+    "ranking" : 20
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 30,
+    "ranking" : 19
+  } ]
+} ]

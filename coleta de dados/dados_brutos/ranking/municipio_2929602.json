@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2929602",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1092,
+    "ranking" : 1
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 414,
+    "ranking" : 2
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 353,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 212,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 199,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 180,
+    "ranking" : 6
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 152,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 104,
+    "ranking" : 9
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 104,
+    "ranking" : 8
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 99,
+    "ranking" : 10
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 88,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 79,
+    "ranking" : 12
+  }, {
+    "nome" : "ROQUE",
+    "frequencia" : 77,
+    "ranking" : 13
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 75,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 73,
+    "ranking" : 15
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 72,
+    "ranking" : 16
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 68,
+    "ranking" : 17
+  }, {
+    "nome" : "JORGE",
+    "frequencia" : 62,
+    "ranking" : 18
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 61,
+    "ranking" : 19
+  }, {
+    "nome" : "BENEDITA",
+    "frequencia" : 60,
+    "ranking" : 20
+  } ]
+} ]

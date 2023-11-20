@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5004403",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 310,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 235,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 167,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 111,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 94,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 65,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 59,
+    "ranking" : 7
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 53,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 50,
+    "ranking" : 9
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 48,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 41,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 39,
+    "ranking" : 12
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 36,
+    "ranking" : 13
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 35,
+    "ranking" : 14
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 34,
+    "ranking" : 15
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 33,
+    "ranking" : 16
+  }, {
+    "nome" : "VITOR",
+    "frequencia" : 27,
+    "ranking" : 17
+  }, {
+    "nome" : "APARECIDO",
+    "frequencia" : 27,
+    "ranking" : 18
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 26,
+    "ranking" : 20
+  }, {
+    "nome" : "FERNANDO",
+    "frequencia" : 26,
+    "ranking" : 21
+  } ]
+} ]

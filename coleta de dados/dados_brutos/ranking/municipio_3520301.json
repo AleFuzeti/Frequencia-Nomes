@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3520301",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1398,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 606,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 429,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 349,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 329,
+    "ranking" : 5
+  }, {
+    "nome" : "BENEDITO",
+    "frequencia" : 315,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 222,
+    "ranking" : 7
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 210,
+    "ranking" : 8
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 178,
+    "ranking" : 9
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 168,
+    "ranking" : 10
+  }, {
+    "nome" : "BENEDITA",
+    "frequencia" : 163,
+    "ranking" : 11
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 160,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 159,
+    "ranking" : 13
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 155,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 141,
+    "ranking" : 15
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 131,
+    "ranking" : 16
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 128,
+    "ranking" : 17
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 123,
+    "ranking" : 18
+  }, {
+    "nome" : "FELIPE",
+    "frequencia" : 122,
+    "ranking" : 19
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 119,
+    "ranking" : 20
+  } ]
+} ]

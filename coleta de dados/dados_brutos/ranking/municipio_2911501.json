@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2911501",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 413,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 164,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 119,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 107,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 102,
+    "ranking" : 5
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 64,
+    "ranking" : 6
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 53,
+    "ranking" : 7
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 51,
+    "ranking" : 8
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 49,
+    "ranking" : 9
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 47,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 37,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 35,
+    "ranking" : 12
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 33,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 32,
+    "ranking" : 14
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 32,
+    "ranking" : 15
+  }, {
+    "nome" : "ROBERTO",
+    "frequencia" : 30,
+    "ranking" : 16
+  }, {
+    "nome" : "CAMILA",
+    "frequencia" : 27,
+    "ranking" : 17
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 27,
+    "ranking" : 18
+  }, {
+    "nome" : "TIAGO",
+    "frequencia" : 26,
+    "ranking" : 20
+  }, {
+    "nome" : "FABIO",
+    "frequencia" : 26,
+    "ranking" : 19
+  } ]
+} ]

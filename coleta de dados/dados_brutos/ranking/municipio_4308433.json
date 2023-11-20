@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4308433",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "PAULO",
+    "frequencia" : 29,
+    "ranking" : 1
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 22,
+    "ranking" : 2
+  }, {
+    "nome" : "JANETE",
+    "frequencia" : 21,
+    "ranking" : 3
+  }, {
+    "nome" : "MARIA",
+    "frequencia" : 19,
+    "ranking" : 4
+  }, {
+    "nome" : "IVO",
+    "frequencia" : 17,
+    "ranking" : 5
+  }, {
+    "nome" : "ASTOR",
+    "frequencia" : 16,
+    "ranking" : 7
+  }, {
+    "nome" : "NOELI",
+    "frequencia" : 16,
+    "ranking" : 6
+  }, {
+    "nome" : "DECIO",
+    "frequencia" : 15,
+    "ranking" : 8
+  }, {
+    "nome" : "NELSI",
+    "frequencia" : 14,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCIA",
+    "frequencia" : 14,
+    "ranking" : 12
+  }, {
+    "nome" : "FERNANDO",
+    "frequencia" : 14,
+    "ranking" : 10
+  }, {
+    "nome" : "JAIR",
+    "frequencia" : 14,
+    "ranking" : 9
+  }, {
+    "nome" : "DULCE",
+    "frequencia" : 13,
+    "ranking" : 13
+  }, {
+    "nome" : "DAIANE",
+    "frequencia" : 13,
+    "ranking" : 14
+  }, {
+    "nome" : "ENIO",
+    "frequencia" : 12,
+    "ranking" : 17
+  }, {
+    "nome" : "MARLISE",
+    "frequencia" : 12,
+    "ranking" : 19
+  }, {
+    "nome" : "ILSE",
+    "frequencia" : 12,
+    "ranking" : 22
+  }, {
+    "nome" : "DELCI",
+    "frequencia" : 12,
+    "ranking" : 18
+  }, {
+    "nome" : "NAIR",
+    "frequencia" : 12,
+    "ranking" : 16
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 12,
+    "ranking" : 20
+  } ]
+} ]

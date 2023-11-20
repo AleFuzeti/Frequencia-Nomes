@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2413300",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 867,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 567,
+    "ranking" : 2
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 213,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 192,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 110,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 106,
+    "ranking" : 6
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 99,
+    "ranking" : 7
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 66,
+    "ranking" : 8
+  }, {
+    "nome" : "SEVERINA",
+    "frequencia" : 62,
+    "ranking" : 9
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 58,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 51,
+    "ranking" : 11
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 41,
+    "ranking" : 12
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 37,
+    "ranking" : 13
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 35,
+    "ranking" : 14
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 30,
+    "ranking" : 15
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 28,
+    "ranking" : 16
+  }, {
+    "nome" : "BENTO",
+    "frequencia" : 27,
+    "ranking" : 17
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 26,
+    "ranking" : 18
+  }, {
+    "nome" : "DAMIAO",
+    "frequencia" : 26,
+    "ranking" : 19
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 24,
+    "ranking" : 22
+  } ]
+} ]

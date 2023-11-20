@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3111804",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 729,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 466,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 204,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 198,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 169,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 132,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 90,
+    "ranking" : 7
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 87,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 85,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 82,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 76,
+    "ranking" : 11
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 61,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 53,
+    "ranking" : 13
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 47,
+    "ranking" : 14
+  }, {
+    "nome" : "GUILHERME",
+    "frequencia" : 44,
+    "ranking" : 15
+  }, {
+    "nome" : "JOANA",
+    "frequencia" : 40,
+    "ranking" : 16
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 39,
+    "ranking" : 19
+  }, {
+    "nome" : "DIVINO",
+    "frequencia" : 39,
+    "ranking" : 17
+  }, {
+    "nome" : "EURIPEDES",
+    "frequencia" : 39,
+    "ranking" : 18
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 38,
+    "ranking" : 20
+  } ]
+} ]

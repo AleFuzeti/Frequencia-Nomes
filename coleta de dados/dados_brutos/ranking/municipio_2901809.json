@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2901809",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 726,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 495,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 201,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 186,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 183,
+    "ranking" : 5
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 155,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 90,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 72,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 66,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 50,
+    "ranking" : 10
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 49,
+    "ranking" : 12
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 49,
+    "ranking" : 11
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 42,
+    "ranking" : 13
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 38,
+    "ranking" : 14
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 34,
+    "ranking" : 15
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 34,
+    "ranking" : 16
+  }, {
+    "nome" : "JULIANA",
+    "frequencia" : 31,
+    "ranking" : 17
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 29,
+    "ranking" : 18
+  }, {
+    "nome" : "EDSON",
+    "frequencia" : 29,
+    "ranking" : 19
+  }, {
+    "nome" : "JOANA",
+    "frequencia" : 28,
+    "ranking" : 20
+  } ]
+} ]

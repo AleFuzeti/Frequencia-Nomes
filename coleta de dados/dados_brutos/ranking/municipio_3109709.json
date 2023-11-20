@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3109709",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 919,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 547,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 412,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 231,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 190,
+    "ranking" : 5
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 151,
+    "ranking" : 6
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 106,
+    "ranking" : 7
+  }, {
+    "nome" : "BENEDITO",
+    "frequencia" : 104,
+    "ranking" : 8
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 103,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 94,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 93,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 90,
+    "ranking" : 12
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 80,
+    "ranking" : 13
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 72,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 71,
+    "ranking" : 15
+  }, {
+    "nome" : "BENEDITA",
+    "frequencia" : 67,
+    "ranking" : 16
+  }, {
+    "nome" : "JOAQUIM",
+    "frequencia" : 62,
+    "ranking" : 17
+  }, {
+    "nome" : "JULIANA",
+    "frequencia" : 52,
+    "ranking" : 18
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 49,
+    "ranking" : 19
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 46,
+    "ranking" : 20
+  } ]
+} ]

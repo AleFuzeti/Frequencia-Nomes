@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "1722081",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 808,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 280,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 216,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 178,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 178,
+    "ranking" : 5
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 146,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 116,
+    "ranking" : 7
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 113,
+    "ranking" : 8
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 109,
+    "ranking" : 9
+  }, {
+    "nome" : "RAIMUNDA",
+    "frequencia" : 74,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 71,
+    "ranking" : 11
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 68,
+    "ranking" : 12
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 56,
+    "ranking" : 13
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 55,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 54,
+    "ranking" : 16
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 54,
+    "ranking" : 15
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 53,
+    "ranking" : 17
+  }, {
+    "nome" : "JOZE",
+    "frequencia" : 44,
+    "ranking" : 18
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 40,
+    "ranking" : 19
+  }, {
+    "nome" : "FERNANDA",
+    "frequencia" : 36,
+    "ranking" : 21
+  } ]
+} ]

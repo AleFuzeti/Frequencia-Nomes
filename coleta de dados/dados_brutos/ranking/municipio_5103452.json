@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5103452",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 510,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 438,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 151,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 114,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 95,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 59,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 57,
+    "ranking" : 7
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 56,
+    "ranking" : 9
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 56,
+    "ranking" : 8
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 52,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 51,
+    "ranking" : 11
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 41,
+    "ranking" : 12
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 38,
+    "ranking" : 13
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 36,
+    "ranking" : 14
+  }, {
+    "nome" : "ADRIANA",
+    "frequencia" : 35,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 34,
+    "ranking" : 16
+  }, {
+    "nome" : "CICERO",
+    "frequencia" : 33,
+    "ranking" : 18
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 33,
+    "ranking" : 17
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 31,
+    "ranking" : 19
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 30,
+    "ranking" : 20
+  } ]
+} ]

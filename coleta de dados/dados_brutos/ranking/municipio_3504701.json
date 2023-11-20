@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3504701",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "JOSE",
+    "frequencia" : 144,
+    "ranking" : 1
+  }, {
+    "nome" : "MARIA",
+    "frequencia" : 85,
+    "ranking" : 2
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 70,
+    "ranking" : 3
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 69,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 61,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 57,
+    "ranking" : 6
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 56,
+    "ranking" : 7
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 50,
+    "ranking" : 8
+  }, {
+    "nome" : "MARCIO",
+    "frequencia" : 47,
+    "ranking" : 10
+  }, {
+    "nome" : "ALEX",
+    "frequencia" : 47,
+    "ranking" : 9
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 42,
+    "ranking" : 11
+  }, {
+    "nome" : "FABIO",
+    "frequencia" : 41,
+    "ranking" : 12
+  }, {
+    "nome" : "ADRIANO",
+    "frequencia" : 40,
+    "ranking" : 13
+  }, {
+    "nome" : "ANDERSON",
+    "frequencia" : 37,
+    "ranking" : 14
+  }, {
+    "nome" : "LEANDRO",
+    "frequencia" : 37,
+    "ranking" : 15
+  }, {
+    "nome" : "RODRIGO",
+    "frequencia" : 35,
+    "ranking" : 16
+  }, {
+    "nome" : "ALEXANDRE",
+    "frequencia" : 34,
+    "ranking" : 17
+  }, {
+    "nome" : "RICARDO",
+    "frequencia" : 32,
+    "ranking" : 18
+  }, {
+    "nome" : "ROGERIO",
+    "frequencia" : 29,
+    "ranking" : 19
+  }, {
+    "nome" : "ANDRE",
+    "frequencia" : 29,
+    "ranking" : 20
+  } ]
+} ]

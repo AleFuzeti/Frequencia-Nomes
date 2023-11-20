@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5213707",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 455,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 255,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 178,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 104,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 97,
+    "ranking" : 5
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 69,
+    "ranking" : 6
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 58,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 53,
+    "ranking" : 9
+  }, {
+    "nome" : "DIVINA",
+    "frequencia" : 53,
+    "ranking" : 8
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 53,
+    "ranking" : 10
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 51,
+    "ranking" : 11
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 49,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 43,
+    "ranking" : 13
+  }, {
+    "nome" : "VALDIVINO",
+    "frequencia" : 40,
+    "ranking" : 14
+  }, {
+    "nome" : "DIVINO",
+    "frequencia" : 39,
+    "ranking" : 15
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 35,
+    "ranking" : 16
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 32,
+    "ranking" : 17
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 31,
+    "ranking" : 18
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 30,
+    "ranking" : 19
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 30,
+    "ranking" : 20
+  } ]
+} ]

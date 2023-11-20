@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4104451",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 492,
+    "ranking" : 1
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 317,
+    "ranking" : 2
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 286,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 199,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 175,
+    "ranking" : 5
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 132,
+    "ranking" : 6
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 86,
+    "ranking" : 7
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 74,
+    "ranking" : 8
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 72,
+    "ranking" : 9
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 71,
+    "ranking" : 10
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 68,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 60,
+    "ranking" : 12
+  }, {
+    "nome" : "ELIANE",
+    "frequencia" : 58,
+    "ranking" : 13
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 56,
+    "ranking" : 14
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 53,
+    "ranking" : 15
+  }, {
+    "nome" : "LEANDRO",
+    "frequencia" : 51,
+    "ranking" : 17
+  }, {
+    "nome" : "ROSELI",
+    "frequencia" : 51,
+    "ranking" : 16
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 50,
+    "ranking" : 18
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 48,
+    "ranking" : 19
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 47,
+    "ranking" : 20
+  } ]
+} ]

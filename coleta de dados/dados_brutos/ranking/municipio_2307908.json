@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2307908",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1448,
+    "ranking" : 1
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 943,
+    "ranking" : 2
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 559,
+    "ranking" : 3
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 502,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIA",
+    "frequencia" : 339,
+    "ranking" : 5
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 328,
+    "ranking" : 6
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 193,
+    "ranking" : 7
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 182,
+    "ranking" : 8
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 170,
+    "ranking" : 9
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 117,
+    "ranking" : 11
+  }, {
+    "nome" : "RAIMUNDA",
+    "frequencia" : 117,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 82,
+    "ranking" : 12
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 69,
+    "ranking" : 13
+  }, {
+    "nome" : "BENEDITO",
+    "frequencia" : 68,
+    "ranking" : 14
+  }, {
+    "nome" : "BENEDITA",
+    "frequencia" : 67,
+    "ranking" : 15
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 65,
+    "ranking" : 16
+  }, {
+    "nome" : "FCO",
+    "frequencia" : 50,
+    "ranking" : 17
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 45,
+    "ranking" : 18
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 42,
+    "ranking" : 19
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 36,
+    "ranking" : 20
+  } ]
+} ]

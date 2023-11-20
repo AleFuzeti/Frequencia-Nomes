@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2608701",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 2419,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 1840,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 290,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 228,
+    "ranking" : 4
+  }, {
+    "nome" : "CICERO",
+    "frequencia" : 225,
+    "ranking" : 5
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 202,
+    "ranking" : 6
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 153,
+    "ranking" : 7
+  }, {
+    "nome" : "QUITERIA",
+    "frequencia" : 129,
+    "ranking" : 8
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 126,
+    "ranking" : 9
+  }, {
+    "nome" : "CICERA",
+    "frequencia" : 115,
+    "ranking" : 10
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 113,
+    "ranking" : 11
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 111,
+    "ranking" : 12
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 103,
+    "ranking" : 13
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 90,
+    "ranking" : 14
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 80,
+    "ranking" : 15
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 59,
+    "ranking" : 16
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 58,
+    "ranking" : 17
+  }, {
+    "nome" : "SEVERINA",
+    "frequencia" : 56,
+    "ranking" : 18
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 53,
+    "ranking" : 19
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 51,
+    "ranking" : 20
+  } ]
+} ]

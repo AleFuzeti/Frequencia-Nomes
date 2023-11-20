@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4218855",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 72,
+    "ranking" : 1
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 36,
+    "ranking" : 2
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 31,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 31,
+    "ranking" : 3
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 27,
+    "ranking" : 6
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 27,
+    "ranking" : 5
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 23,
+    "ranking" : 7
+  }, {
+    "nome" : "SALETE",
+    "frequencia" : 18,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 16,
+    "ranking" : 9
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 13,
+    "ranking" : 11
+  }, {
+    "nome" : "NEUSA",
+    "frequencia" : 13,
+    "ranking" : 12
+  }, {
+    "nome" : "ROSA",
+    "frequencia" : 13,
+    "ranking" : 10
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 12,
+    "ranking" : 14
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 12,
+    "ranking" : 13
+  }, {
+    "nome" : "LURDES",
+    "frequencia" : 11,
+    "ranking" : 17
+  }, {
+    "nome" : "VALDIR",
+    "frequencia" : 11,
+    "ranking" : 15
+  }, {
+    "nome" : "JOEL",
+    "frequencia" : 11,
+    "ranking" : 19
+  }, {
+    "nome" : "IVETE",
+    "frequencia" : 11,
+    "ranking" : 18
+  }, {
+    "nome" : "GUSTAVO",
+    "frequencia" : 11,
+    "ranking" : 20
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 11,
+    "ranking" : 21
+  } ]
+} ]

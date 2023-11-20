@@ -1,0 +1,73 @@
+[ {
+  "localidade" : "4314134",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 46,
+    "ranking" : 1
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 36,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 16,
+    "ranking" : 3
+  }, {
+    "nome" : "SALETE",
+    "frequencia" : 14,
+    "ranking" : 4
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 13,
+    "ranking" : 5
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 12,
+    "ranking" : 6
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 12,
+    "ranking" : 8
+  }, {
+    "nome" : "MARLI",
+    "frequencia" : 12,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 11,
+    "ranking" : 9
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 11,
+    "ranking" : 10
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 11,
+    "ranking" : 11
+  }, {
+    "nome" : "ANDRE",
+    "frequencia" : 11,
+    "ranking" : 13
+  }, {
+    "nome" : "TIAGO",
+    "frequencia" : 11,
+    "ranking" : 12
+  }, {
+    "nome" : "LEONARDO",
+    "frequencia" : 10,
+    "ranking" : 15
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 10,
+    "ranking" : 16
+  }, {
+    "nome" : "CLAUDIO",
+    "frequencia" : 10,
+    "ranking" : 14
+  }, {
+    "nome" : "TERESINHA",
+    "frequencia" : 10,
+    "ranking" : 17
+  } ]
+} ]

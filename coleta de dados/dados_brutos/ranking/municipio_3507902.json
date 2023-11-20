@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3507902",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1176,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 799,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 455,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 437,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 430,
+    "ranking" : 5
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 303,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 211,
+    "ranking" : 7
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 193,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 174,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 160,
+    "ranking" : 10
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 155,
+    "ranking" : 11
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 138,
+    "ranking" : 12
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 127,
+    "ranking" : 13
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 111,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 110,
+    "ranking" : 15
+  }, {
+    "nome" : "MARCIA",
+    "frequencia" : 109,
+    "ranking" : 16
+  }, {
+    "nome" : "BENEDITO",
+    "frequencia" : 107,
+    "ranking" : 17
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 98,
+    "ranking" : 18
+  }, {
+    "nome" : "FABIO",
+    "frequencia" : 93,
+    "ranking" : 19
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 90,
+    "ranking" : 21
+  } ]
+} ]

@@ -1,0 +1,45 @@
+[ {
+  "localidade" : "5220058",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 81,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 56,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 41,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 25,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 18,
+    "ranking" : 5
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 14,
+    "ranking" : 6
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 11,
+    "ranking" : 7
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 10,
+    "ranking" : 8
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 10,
+    "ranking" : 9
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 10,
+    "ranking" : 10
+  } ]
+} ]

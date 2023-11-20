@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4122206",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 977,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 789,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 694,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 508,
+    "ranking" : 4
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 371,
+    "ranking" : 5
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 235,
+    "ranking" : 6
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 226,
+    "ranking" : 7
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 223,
+    "ranking" : 8
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 214,
+    "ranking" : 9
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 159,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 150,
+    "ranking" : 11
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 125,
+    "ranking" : 12
+  }, {
+    "nome" : "ELIANE",
+    "frequencia" : 118,
+    "ranking" : 13
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 115,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 113,
+    "ranking" : 15
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 113,
+    "ranking" : 16
+  }, {
+    "nome" : "ROSA",
+    "frequencia" : 108,
+    "ranking" : 17
+  }, {
+    "nome" : "JOSIANE",
+    "frequencia" : 106,
+    "ranking" : 18
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 103,
+    "ranking" : 19
+  }, {
+    "nome" : "JESSICA",
+    "frequencia" : 102,
+    "ranking" : 21
+  } ]
+} ]

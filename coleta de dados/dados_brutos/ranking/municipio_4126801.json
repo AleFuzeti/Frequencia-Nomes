@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4126801",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 848,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 454,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 324,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 225,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 174,
+    "ranking" : 5
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 140,
+    "ranking" : 6
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 133,
+    "ranking" : 7
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 118,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 110,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 97,
+    "ranking" : 10
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 88,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 82,
+    "ranking" : 12
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 74,
+    "ranking" : 13
+  }, {
+    "nome" : "RODRIGO",
+    "frequencia" : 64,
+    "ranking" : 14
+  }, {
+    "nome" : "TIAGO",
+    "frequencia" : 63,
+    "ranking" : 15
+  }, {
+    "nome" : "APARECIDO",
+    "frequencia" : 62,
+    "ranking" : 16
+  }, {
+    "nome" : "AMANDA",
+    "frequencia" : 60,
+    "ranking" : 17
+  }, {
+    "nome" : "ADRIANA",
+    "frequencia" : 58,
+    "ranking" : 18
+  }, {
+    "nome" : "EDSON",
+    "frequencia" : 58,
+    "ranking" : 19
+  }, {
+    "nome" : "SUELI",
+    "frequencia" : 56,
+    "ranking" : 20
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2507804",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1024,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 478,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 150,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 124,
+    "ranking" : 4
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 119,
+    "ranking" : 5
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 94,
+    "ranking" : 6
+  }, {
+    "nome" : "DAMIAO",
+    "frequencia" : 74,
+    "ranking" : 7
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 51,
+    "ranking" : 8
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 47,
+    "ranking" : 9
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 44,
+    "ranking" : 11
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 44,
+    "ranking" : 10
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 42,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 38,
+    "ranking" : 13
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 35,
+    "ranking" : 14
+  }, {
+    "nome" : "DAMIANA",
+    "frequencia" : 34,
+    "ranking" : 16
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 34,
+    "ranking" : 15
+  }, {
+    "nome" : "ONOFRE",
+    "frequencia" : 33,
+    "ranking" : 17
+  }, {
+    "nome" : "INACIA",
+    "frequencia" : 32,
+    "ranking" : 19
+  }, {
+    "nome" : "INACIO",
+    "frequencia" : 32,
+    "ranking" : 18
+  }, {
+    "nome" : "SEVERINO",
+    "frequencia" : 29,
+    "ranking" : 20
+  } ]
+} ]

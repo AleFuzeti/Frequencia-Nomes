@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2912509",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 1048,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 562,
+    "ranking" : 2
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 335,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 252,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 251,
+    "ranking" : 5
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 186,
+    "ranking" : 6
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 95,
+    "ranking" : 7
+  }, {
+    "nome" : "JOAQUIM",
+    "frequencia" : 94,
+    "ranking" : 8
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 72,
+    "ranking" : 9
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 66,
+    "ranking" : 10
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 64,
+    "ranking" : 11
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 45,
+    "ranking" : 12
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 44,
+    "ranking" : 14
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 44,
+    "ranking" : 13
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 43,
+    "ranking" : 16
+  }, {
+    "nome" : "APARECIDO",
+    "frequencia" : 43,
+    "ranking" : 15
+  }, {
+    "nome" : "LEANDRO",
+    "frequencia" : 41,
+    "ranking" : 17
+  }, {
+    "nome" : "JOANA",
+    "frequencia" : 40,
+    "ranking" : 18
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 39,
+    "ranking" : 19
+  }, {
+    "nome" : "MARILENE",
+    "frequencia" : 38,
+    "ranking" : 20
+  } ]
+} ]

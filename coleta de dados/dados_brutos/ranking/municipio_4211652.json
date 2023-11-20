@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "4211652",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 83,
+    "ranking" : 1
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 39,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 37,
+    "ranking" : 3
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 29,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 29,
+    "ranking" : 4
+  }, {
+    "nome" : "VALDIR",
+    "frequencia" : 21,
+    "ranking" : 6
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 18,
+    "ranking" : 7
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 17,
+    "ranking" : 8
+  }, {
+    "nome" : "SALETE",
+    "frequencia" : 14,
+    "ranking" : 10
+  }, {
+    "nome" : "ANGELO",
+    "frequencia" : 14,
+    "ranking" : 9
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 13,
+    "ranking" : 11
+  }, {
+    "nome" : "RODRIGO",
+    "frequencia" : 12,
+    "ranking" : 14
+  }, {
+    "nome" : "ADEMIR",
+    "frequencia" : 12,
+    "ranking" : 12
+  }, {
+    "nome" : "TEREZINHA",
+    "frequencia" : 12,
+    "ranking" : 13
+  }, {
+    "nome" : "INES",
+    "frequencia" : 11,
+    "ranking" : 17
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 11,
+    "ranking" : 16
+  }, {
+    "nome" : "FELIPE",
+    "frequencia" : 11,
+    "ranking" : 18
+  }, {
+    "nome" : "SIDINEI",
+    "frequencia" : 11,
+    "ranking" : 15
+  }, {
+    "nome" : "LURDES",
+    "frequencia" : 10,
+    "ranking" : 20
+  }, {
+    "nome" : "DANIEL",
+    "frequencia" : 10,
+    "ranking" : 19
+  } ]
+} ]

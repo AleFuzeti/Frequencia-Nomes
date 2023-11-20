@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3536307",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 831,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 459,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 277,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 225,
+    "ranking" : 4
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 189,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 164,
+    "ranking" : 6
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 162,
+    "ranking" : 7
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 125,
+    "ranking" : 8
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 116,
+    "ranking" : 9
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 90,
+    "ranking" : 10
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 86,
+    "ranking" : 11
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 80,
+    "ranking" : 12
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 76,
+    "ranking" : 13
+  }, {
+    "nome" : "MARCELO",
+    "frequencia" : 71,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 62,
+    "ranking" : 15
+  }, {
+    "nome" : "JULIANA",
+    "frequencia" : 61,
+    "ranking" : 16
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 60,
+    "ranking" : 17
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 59,
+    "ranking" : 18
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 57,
+    "ranking" : 20
+  }, {
+    "nome" : "GERALDO",
+    "frequencia" : 57,
+    "ranking" : 19
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "2704807",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "JOSE",
+    "frequencia" : 1670,
+    "ranking" : 1
+  }, {
+    "nome" : "MARIA",
+    "frequencia" : 1302,
+    "ranking" : 2
+  }, {
+    "nome" : "JOSEFA",
+    "frequencia" : 593,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 251,
+    "ranking" : 4
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 203,
+    "ranking" : 5
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 166,
+    "ranking" : 6
+  }, {
+    "nome" : "CICERO",
+    "frequencia" : 139,
+    "ranking" : 7
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 115,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 103,
+    "ranking" : 9
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 87,
+    "ranking" : 10
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 86,
+    "ranking" : 11
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 85,
+    "ranking" : 12
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 81,
+    "ranking" : 13
+  }, {
+    "nome" : "CICERA",
+    "frequencia" : 77,
+    "ranking" : 14
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 59,
+    "ranking" : 15
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 52,
+    "ranking" : 16
+  }, {
+    "nome" : "QUITERIA",
+    "frequencia" : 49,
+    "ranking" : 17
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 45,
+    "ranking" : 18
+  }, {
+    "nome" : "FRANCISCA",
+    "frequencia" : 43,
+    "ranking" : 19
+  }, {
+    "nome" : "CARLA",
+    "frequencia" : 42,
+    "ranking" : 20
+  } ]
+} ]

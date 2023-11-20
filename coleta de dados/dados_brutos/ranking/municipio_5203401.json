@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "5203401",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 466,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 250,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 244,
+    "ranking" : 3
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 113,
+    "ranking" : 4
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 108,
+    "ranking" : 5
+  }, {
+    "nome" : "SEBASTIAO",
+    "frequencia" : 64,
+    "ranking" : 6
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 58,
+    "ranking" : 7
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 55,
+    "ranking" : 8
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 50,
+    "ranking" : 9
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 48,
+    "ranking" : 10
+  }, {
+    "nome" : "JOAQUIM",
+    "frequencia" : 39,
+    "ranking" : 11
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 34,
+    "ranking" : 12
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 33,
+    "ranking" : 13
+  }, {
+    "nome" : "LUZIA",
+    "frequencia" : 31,
+    "ranking" : 14
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 31,
+    "ranking" : 16
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 31,
+    "ranking" : 17
+  }, {
+    "nome" : "VALDIVINO",
+    "frequencia" : 31,
+    "ranking" : 15
+  }, {
+    "nome" : "DIVINO",
+    "frequencia" : 30,
+    "ranking" : 18
+  }, {
+    "nome" : "MATEUS",
+    "frequencia" : 26,
+    "ranking" : 20
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 26,
+    "ranking" : 19
+  } ]
+} ]

@@ -1,0 +1,85 @@
+[ {
+  "localidade" : "3503703",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 436,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 309,
+    "ranking" : 2
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 228,
+    "ranking" : 3
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 164,
+    "ranking" : 4
+  }, {
+    "nome" : "LUIS",
+    "frequencia" : 139,
+    "ranking" : 5
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 117,
+    "ranking" : 6
+  }, {
+    "nome" : "APARECIDA",
+    "frequencia" : 111,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 90,
+    "ranking" : 8
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 86,
+    "ranking" : 9
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 62,
+    "ranking" : 10
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 58,
+    "ranking" : 11
+  }, {
+    "nome" : "GABRIEL",
+    "frequencia" : 58,
+    "ranking" : 12
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 52,
+    "ranking" : 13
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 51,
+    "ranking" : 14
+  }, {
+    "nome" : "RAFAEL",
+    "frequencia" : 43,
+    "ranking" : 15
+  }, {
+    "nome" : "BRUNO",
+    "frequencia" : 40,
+    "ranking" : 17
+  }, {
+    "nome" : "MARCIO",
+    "frequencia" : 40,
+    "ranking" : 16
+  }, {
+    "nome" : "BENEDITO",
+    "frequencia" : 39,
+    "ranking" : 19
+  }, {
+    "nome" : "RITA",
+    "frequencia" : 39,
+    "ranking" : 18
+  }, {
+    "nome" : "APARECIDO",
+    "frequencia" : 38,
+    "ranking" : 20
+  } ]
+} ]

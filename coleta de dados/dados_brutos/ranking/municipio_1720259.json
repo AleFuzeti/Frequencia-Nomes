@@ -1,0 +1,81 @@
+[ {
+  "localidade" : "1720259",
+  "sexo" : null,
+  "res" : [ {
+    "nome" : "MARIA",
+    "frequencia" : 150,
+    "ranking" : 1
+  }, {
+    "nome" : "JOSE",
+    "frequencia" : 59,
+    "ranking" : 2
+  }, {
+    "nome" : "ANA",
+    "frequencia" : 53,
+    "ranking" : 3
+  }, {
+    "nome" : "JOAO",
+    "frequencia" : 38,
+    "ranking" : 4
+  }, {
+    "nome" : "PEDRO",
+    "frequencia" : 24,
+    "ranking" : 5
+  }, {
+    "nome" : "CARLOS",
+    "frequencia" : 23,
+    "ranking" : 6
+  }, {
+    "nome" : "LUCAS",
+    "frequencia" : 21,
+    "ranking" : 7
+  }, {
+    "nome" : "PAULO",
+    "frequencia" : 19,
+    "ranking" : 10
+  }, {
+    "nome" : "MARCOS",
+    "frequencia" : 19,
+    "ranking" : 9
+  }, {
+    "nome" : "ADAO",
+    "frequencia" : 19,
+    "ranking" : 8
+  }, {
+    "nome" : "MANOEL",
+    "frequencia" : 18,
+    "ranking" : 12
+  }, {
+    "nome" : "ANTONIO",
+    "frequencia" : 18,
+    "ranking" : 11
+  }, {
+    "nome" : "EVA",
+    "frequencia" : 16,
+    "ranking" : 13
+  }, {
+    "nome" : "FRANCISCO",
+    "frequencia" : 13,
+    "ranking" : 16
+  }, {
+    "nome" : "LUIZ",
+    "frequencia" : 13,
+    "ranking" : 14
+  }, {
+    "nome" : "EDUARDO",
+    "frequencia" : 13,
+    "ranking" : 15
+  }, {
+    "nome" : "DOMINGAS",
+    "frequencia" : 11,
+    "ranking" : 18
+  }, {
+    "nome" : "RAIMUNDO",
+    "frequencia" : 11,
+    "ranking" : 17
+  }, {
+    "nome" : "WANDERSON",
+    "frequencia" : 10,
+    "ranking" : 19
+  } ]
+} ]
