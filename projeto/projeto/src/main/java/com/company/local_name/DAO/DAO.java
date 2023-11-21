@@ -5,10 +5,10 @@ import java.sql.SQLException;
 
 public interface DAO<T> {
 
-    public void create(T t) throws SQLException;
-    public T read(Integer id) throws SQLException;
-    public void update(T t) throws SQLException;
-    public void delete(Integer id) throws SQLException;
-    public List<T> all() throws SQLException;  
+    public void create(T object) throws SQLException;
+    public T get(Object key) throws SQLException;
+    public List<T> getAll() throws SQLException;
+    public void update(T object) throws SQLException;
+    public void delete(Object key) throws SQLException;
     
 }
