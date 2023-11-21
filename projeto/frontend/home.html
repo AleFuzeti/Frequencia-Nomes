@@ -12,7 +12,7 @@
     
 <div class="container">
     <div>
-        <h1>Inserção de Nome</h1>
+        <h1>Rank de Nomes por Localidade</h1>
     </div>
     
     <form id="myForm">
@@ -31,16 +31,12 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="name">* Nome</label>
-            <input type="text" id="name" name="name" class="form-control required">
-        </div>
-        <div class="form-group">
             <button class="submit" type="submit">Submit</button>
         </div>
     </form>
-
-    <!-- Botão fora do formulário -->
-    <button id="viewData">Ver Dados</button>
+    
+    <!-- Div para exibir a resposta da API -->
+    <div id="apiResponse"></div>
 </div>
 
 </body>

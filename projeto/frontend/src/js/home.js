@@ -68,28 +68,35 @@ $(document).ready(function () {
         // Obtenha os nomes selecionados
         var temEstado = $('#addressEstado').val();
         var temCidade = $('#addressCidade').val();
-        var estadoSelecionado = $('#addressEstado option:selected').text();
-        var cidadeSelecionada = $('#addressCidade option:selected').text();
-        var nomeDigitado = $('#name').val();
 
         // Verifique se todos os campos estão preenchidos
-        if (temEstado && temCidade && nomeDigitado) {
+        if (temEstado && temCidade) {
             // Exemplo de uso: exiba os valores no console
-            console.log('Estado:', estadoSelecionado);
-            console.log('Cidade:', cidadeSelecionada);
-            console.log('Nome:', nomeDigitado);
+            console.log('Cidade:', temCidade);
+            var apiUrl = 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=' + temCidade;
+            console.log('URL da requisição:', apiUrl);
 
-            // Adicione aqui a lógica para enviar os dados para o servidor ou realizar outras operações necessárias
+            // Faça a requisição AJAX
+            $.ajax({
+                url: apiUrl,
+                dataType: 'json',
+                success: function (data) {
+                    // Exiba a resposta na div
+                    $('#apiResponse').html('Resposta da API: ' + JSON.stringify(data));
+                },
+                error: function (error) {
+                    console.error('Erro na requisição à API:', error);
+
+                    // Exiba o erro na div
+                    $('#apiResponse').html('Erro na requisição à API: ' + JSON.stringify(error));
+                }
+            });
         } else {
             // Caso algum campo não esteja preenchido, exiba uma mensagem de erro ou tome outra ação apropriada
             alert('Por favor, preencha todos os campos antes de enviar o formulário.');
         }
     });
     
-    // Botão fora do formulário para redirecionar para data.html
-    $('#viewData').on('click', function () {
-        window.location.href = 'data.html';
-    });
 
 });
 
