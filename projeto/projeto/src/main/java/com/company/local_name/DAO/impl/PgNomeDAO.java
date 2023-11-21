@@ -2,7 +2,6 @@ package com.company.local_name.DAO.impl;
 
 import com.company.local_name.DAO.NomeDAO;
 import com.company.local_name.model.Nome;
-import com.company.local_name.model.Regiao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,11 +16,11 @@ public class PgNomeDAO implements NomeDAO{
         this.connection = connection;
     }
 
-    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(cidade, nome, frequencia, rank)" + "VALUES (?,?,?,?)";
-    private static final String GET_NOME      = "SELECT * FROM local_names_db.nome WHERE cidade = ? AND nome = ?";
+    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(localidade, nome, frequencia, rank)" + "VALUES (?,?,?,?)";
+    private static final String GET_NOME      = "SELECT * FROM local_names_db.nome WHERE localidade = ? AND nome = ?";
     private static final String GET_ALL_NOMES = "SELECT * FROM local_names_db.nome";
-    private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, rank=? WHERE nome = ? AND cidade = ?";
-    private static final String DELETE_NOME   = "DELETE * FROM local_names_db.nome  WHERE nome = ? AND cidade = ?";
+    private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, rank=? WHERE nome = ? AND localidade = ?";
+    private static final String DELETE_NOME   = "DELETE * FROM local_names_db.nome  WHERE nome = ? AND localidade = ?";
 
 
     @Override
@@ -51,7 +50,7 @@ public class PgNomeDAO implements NomeDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                nome = new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank"));
+                nome = new Nome(statement.getResultSet().getString("localidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank"));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -69,7 +68,7 @@ public class PgNomeDAO implements NomeDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                nomes.add( new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank")));
+                nomes.add( new Nome(statement.getResultSet().getString("localidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank")));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());

@@ -1,24 +1,24 @@
 package com.company.local_name.model;
 
 public class Nome {
-    private String cidade;
+    private String localidade;
     private String nome;
     private int frequencia;
     private int rank;
     
-    public Nome(String cidade, String nome, int frequencia, int rank) {
-        this.cidade = cidade;
+    public Nome(String localidade, String nome, int frequencia, int rank) {
+        this.localidade = localidade;
         this.nome = nome;
         this.frequencia = frequencia;
         this.rank = rank;
     }
 
     public String getCidade() {
-        return cidade;
+        return localidade;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCidade(String localidade) {
+        this.localidade = localidade;
     }
 
     public String getNome() {
