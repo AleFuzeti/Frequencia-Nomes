@@ -2,6 +2,7 @@ package com.company.local_name.DAO.impl;
 
 import com.company.local_name.DAO.NomeDAO;
 import com.company.local_name.model.Nome;
+import com.company.local_name.model.Regiao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,6 +19,7 @@ public class PgNomeDAO implements NomeDAO{
 
     private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(cidade, nome, frequencia, ranking)" + "VALUES (?,?,?,?)";
     private static final String GET_NOME      = "SELECT * FROM local_names_db.nome WHERE cidade = ? AND nome = ?";
+    private static final String GET_ALL_NOMES = "SELECT * FROM local_names_db.nome";
     private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, ranking=? WHERE nome = ? AND cidade = ?";
     private static final String DELETE_NOME   = "DELETE * FROM local_names_db.nome  WHERE nome = ? AND cidade = ?";
 
@@ -39,7 +41,7 @@ public class PgNomeDAO implements NomeDAO{
         }
     }
 
-    //@Override
+    @Override
     public Nome get(Object key) throws SQLException {
 
         Nome nome = null;
@@ -60,6 +62,24 @@ public class PgNomeDAO implements NomeDAO{
     }
 
     @Override
+    public List<Nome> getAll() throws SQLException {
+        List<Nome> nomes = new ArrayList<>();
+
+        try (PreparedStatement statement = connection.prepareStatement(GET_ALL_NOMES)) {
+            statement.executeQuery();
+
+            while (statement.getResultSet().next()) {
+                nomes.add( new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("ranking")));
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+            throw new SQLException("Erro ao listar regioes");
+        }
+
+        return nomes;
+    }
+
+    @Override
     public void update(Nome object) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_NOME)) {
             statement.setString(1, object.getCidade());
@@ -74,7 +94,7 @@ public class PgNomeDAO implements NomeDAO{
         }
     }
 
-    //@Override
+    @Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_NOME)) {
             statement.setString(1, ((Nome) key).getCidade());

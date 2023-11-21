@@ -40,7 +40,7 @@ public class PgRegiaoDAO implements RegiaoDAO{
         }
     }
 
-    //@Override
+    @Override
     public Regiao get(Object key) throws SQLException {
 
         Regiao regiao = null;
@@ -60,7 +60,7 @@ public class PgRegiaoDAO implements RegiaoDAO{
         return regiao;
     }
 
-    //@Override
+    @Override
     public List<Regiao> getAll() throws SQLException {
         List<Regiao> regioes = new ArrayList<>();
 
@@ -92,7 +92,7 @@ public class PgRegiaoDAO implements RegiaoDAO{
         }
     }
 
-    //@Override
+    @Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_REGIAO)) {
             statement.setString(1, ((Regiao) key).getSigla());

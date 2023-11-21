@@ -39,7 +39,7 @@ public class PgEstadoDAO implements EstadoDAO{
         }
     }
 
-    //@Override
+    @Override
     public Estado get(Object key) throws SQLException {
 
         Estado estado = null;
@@ -59,7 +59,7 @@ public class PgEstadoDAO implements EstadoDAO{
         return estado;
     }
 
-    //@Override
+    @Override
     public List<Estado> getAll() throws SQLException {
         List<Estado> estados = new ArrayList<>();
 
@@ -92,7 +92,7 @@ public class PgEstadoDAO implements EstadoDAO{
         }
     }
 
-    //@Override
+    @Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_ESTADO)) {
             statement.setString(1, ((Estado) key).getSigla());
