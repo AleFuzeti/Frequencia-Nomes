@@ -1,6 +1,6 @@
-package main.java.DAO;
+package com.company.local_name.DAO;
 
-import main.java.model.Regiao;
+import com.company.local_name.model.Regiao;
 
 public interface RegiaoDAO extends DAO<Regiao>{
     

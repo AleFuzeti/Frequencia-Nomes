@@ -1,4 +1,4 @@
-package main.java.jbdc;
+package com.company.local_name.jbdc;
 
 import java.io.FileInputStream;
 import java.io.IOException;

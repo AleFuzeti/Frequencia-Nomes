@@ -1,4 +1,4 @@
-package main.java.DAO;
+package com.company.local_name.DAO;
 
 import java.sql.Connection;
 

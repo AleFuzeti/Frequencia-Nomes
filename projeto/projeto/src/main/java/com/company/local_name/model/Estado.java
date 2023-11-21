@@ -1,4 +1,4 @@
-package main.java.model;
+package com.company.local_name.model;
 
 public class Estado {
     private String id;
