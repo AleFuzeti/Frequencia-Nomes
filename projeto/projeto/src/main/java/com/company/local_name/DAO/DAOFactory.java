@@ -1,6 +1,6 @@
 package com.company.local_name.DAO;
 
-import main.java.jbdc.ConnectionFactory;
+import com.company.local_name.jbdc.ConnectionFactory;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,6 +1,6 @@
 package com.company.local_name.DAO;
 
-import main.java.model.Cidade;
+import com.company.local_name.model.Cidade;
 
 public interface CidadeDAO extends DAO<Cidade>{
         

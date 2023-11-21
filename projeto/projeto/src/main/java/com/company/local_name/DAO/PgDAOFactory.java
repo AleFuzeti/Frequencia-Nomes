@@ -2,10 +2,10 @@ package com.company.local_name.DAO;
 
 import java.sql.Connection;
 
-import main.java.DAO.impl.PgCidadeDAO;
-import main.java.DAO.impl.PgEstadoDAO;
-import main.java.DAO.impl.PgNomeDAO;
-import main.java.DAO.impl.PgRegiaoDAO;
+import com.company.local_name.DAO.impl.PgNomeDAO;
+import com.company.local_name.DAO.impl.PgRegiaoDAO;
+import com.company.local_name.DAO.impl.PgEstadoDAO;
+import com.company.local_name.DAO.impl.PgCidadeDAO;
 
 public class PgDAOFactory extends DAOFactory {
 
@@ -24,12 +24,12 @@ public class PgDAOFactory extends DAOFactory {
     }
 
     @Override
-    public RegiaoDAO RegiaoDAO() {
+    public RegiaoDAO getRegiaoDAO() {
         return new PgRegiaoDAO(connection);
     }
 
     @Override
-    public NomeDAO NomeDAO() {
+    public NomeDAO getNomeDAO() {
         return new PgNomeDAO(connection);
     }
 

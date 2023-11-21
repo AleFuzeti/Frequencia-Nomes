@@ -1,7 +1,7 @@
-package main.java.DAO.impl;
+package com.company.local_name.DAO.impl;
 
-import main.java.DAO.CidadeDAO;
-import main.java.model.Cidade;
+import com.company.local_name.DAO.CidadeDAO;
+import com.company.local_name.model.Cidade;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,7 +37,7 @@ public class PgCidadeDAO implements CidadeDAO{
         }
     }
 
-    @Override
+    //@Override
     public Cidade get(Object key) throws SQLException {
         Cidade cidade = null;
         try (PreparedStatement statement = connection.prepareStatement(GET_CIDADE)) {
@@ -55,7 +55,7 @@ public class PgCidadeDAO implements CidadeDAO{
         return cidade;
     }
 
-    @Override
+    //@Override
     public List<Cidade> getAll() throws SQLException {
         List<Cidade> cidadesList= new ArrayList<Cidade>();
         try (PreparedStatement statement = connection.prepareStatement(GET_ALL_CIDADES)) {
@@ -86,7 +86,7 @@ public class PgCidadeDAO implements CidadeDAO{
         }
     }
 
-    @Override
+    //@Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_CIDADE)) {
             statement.setInt(1, (int)key);
