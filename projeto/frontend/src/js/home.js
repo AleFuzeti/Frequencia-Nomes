@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     // Carregue os estados do arquivo JSON usando AJAX
     $.ajax({
-        url: '../dados_tratados/estados_tratados.json',
+        url: '../../../../dados_tratados/estados_tratados.json',
         dataType: 'json',
         success: function (data) {
             // Atribua os dados carregados à variável states
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         // Carregue as cidades do arquivo JSON usando AJAX
         $.ajax({
-            url: '../dados_tratados/municipios_tratados.json',
+            url: '../../../../dados_tratados/municipios_tratados.json',
             dataType: 'json',
             success: function (data) {
                 // Atribua os dados carregados à variável cities
