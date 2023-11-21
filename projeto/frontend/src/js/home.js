@@ -82,7 +82,7 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (data) {
                     // Exiba a resposta na div
-                    $('#apiResponse').html('Resposta da API: ' + JSON.stringify(data));
+                    formatAndDisplayData(data);
                 },
                 error: function (error) {
                     console.error('Erro na requisição à API:', error);
@@ -96,7 +96,33 @@ $(document).ready(function () {
             alert('Por favor, preencha todos os campos antes de enviar o formulário.');
         }
     });
-    
+
+    // Função para formatar e exibir os dados em uma tabela
+    function formatAndDisplayData(data) {
+    // Implemente o tratamento e formatação dos dados aqui
+    var formattedData = '<table border="1">';
+    formattedData += '<tr><th>Nome</th><th>Rank</th><th>Frequência</th></tr>';
+
+    // Verifique se há dados na resposta
+    if (data.length > 0 && data[0].res.length > 0) {
+        // Exemplo: percorra os itens da resposta e adicione-os à tabela
+        data[0].res.forEach(function (item) {
+            formattedData += '<tr>';
+            formattedData += '<td>' + item.nome + '</td>';
+            formattedData += '<td>' + item.ranking + '</td>';
+            formattedData += '<td>' + item.frequencia + '</td>';
+            formattedData += '</tr>';
+        });
+    } else {
+        // Caso não haja dados na resposta, exiba uma mensagem na tabela
+        formattedData += '<tr><td colspan="3">Nenhum dado disponível</td></tr>';
+    }
+
+    formattedData += '</table>';
+
+    // Exiba a tabela na div
+    $('#apiResponse').html(formattedData);
+}
 
 });
 
