@@ -59,6 +59,10 @@ public class Main {
             // Obter os municípios de todas as UFs
             String municipiosResponse = HttpUtil.fetchDataFromAPI(municipiosUrl);
 
+            // converter em objeto java
+
+            // salvar no banco
+
             // Salvar os dados dos municípios de todas as UFs em um único arquivo JSON com identação
             String municipiosOutputPath = outputFolderPath + "/municipios_todas_ufs.json";
             FileUtil.writeJsonToFile(municipiosOutputPath, prettyObjectMapper.writeValueAsString(prettyObjectMapper.readTree(municipiosResponse)));
