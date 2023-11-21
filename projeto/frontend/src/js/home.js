@@ -1,3 +1,34 @@
+function sendToDB(data) {
+    // Configuração da requisição
+    const requestOptions = {
+      method: 'POST', // Você pode ajustar o método conforme necessário
+      headers: {
+        'Content-Type': 'application/json'
+        // Adicione headers adicionais se necessário
+      },
+      body: JSON.stringify(data) // Converte o objeto JSON para uma string
+    };
+  
+    // Faz a requisição para o controlador /nomes
+    fetch('/nomes', requestOptions)
+      .then(response => {
+        // Verifica se a resposta da requisição foi bem-sucedida
+        if (!response.ok) {
+          throw new Error('Erro na requisição para /nomes');
+        }
+        // Pode retornar a resposta se necessário
+        return response.json();
+      })
+      .then(data => {
+        // Lida com os dados da resposta, se necessário
+        console.log('Resposta do servidor:', data);
+      })
+      .catch(error => {
+        // Lida com erros durante a requisição
+        console.error('Erro na requisição:', error.message);
+      });
+}
+
 $(document).ready(function () {
     // Popule a lista de estados (substitua com seus dados reais)
     var states = [];
@@ -83,6 +114,7 @@ $(document).ready(function () {
                 success: function (data) {
                     // Exiba a resposta na div
                     formatAndDisplayData(data);
+                    sentToDB(data);
                 },
                 error: function (error) {
                     console.error('Erro na requisição à API:', error);
@@ -99,30 +131,31 @@ $(document).ready(function () {
 
     // Função para formatar e exibir os dados em uma tabela
     function formatAndDisplayData(data) {
-    // Implemente o tratamento e formatação dos dados aqui
-    var formattedData = '<table border="1">';
-    formattedData += '<tr><th>Nome</th><th>Rank</th><th>Frequência</th></tr>';
+        // Implemente o tratamento e formatação dos dados aqui
+        var formattedData = '<table border="1">';
+        formattedData += '<tr><th>Nome</th><th>Rank</th><th>Frequência</th></tr>';
 
-    // Verifique se há dados na resposta
-    if (data.length > 0 && data[0].res.length > 0) {
-        // Exemplo: percorra os itens da resposta e adicione-os à tabela
-        data[0].res.forEach(function (item) {
-            formattedData += '<tr>';
-            formattedData += '<td>' + item.nome + '</td>';
-            formattedData += '<td>' + item.ranking + '</td>';
-            formattedData += '<td>' + item.frequencia + '</td>';
-            formattedData += '</tr>';
-        });
-    } else {
-        // Caso não haja dados na resposta, exiba uma mensagem na tabela
-        formattedData += '<tr><td colspan="3">Nenhum dado disponível</td></tr>';
+        // Verifique se há dados na resposta
+        if (data.length > 0 && data[0].res.length > 0) {
+            // Exemplo: percorra os itens da resposta e adicione-os à tabela
+            data[0].res.forEach(function (item) {
+                formattedData += '<tr>';
+                formattedData += '<td>' + item.nome + '</td>';
+                formattedData += '<td>' + item.ranking + '</td>';
+                formattedData += '<td>' + item.frequencia + '</td>';
+                formattedData += '</tr>';
+            });
+        } else {
+            // Caso não haja dados na resposta, exiba uma mensagem na tabela
+            formattedData += '<tr><td colspan="3">Nenhum dado disponível</td></tr>';
+        }
+
+        formattedData += '</table>';
+
+        // Exiba a tabela na div
+        $('#apiResponse').html(formattedData);
+
     }
-
-    formattedData += '</table>';
-
-    // Exiba a tabela na div
-    $('#apiResponse').html(formattedData);
-}
-
 });
+
 
