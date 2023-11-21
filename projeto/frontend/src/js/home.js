@@ -1,34 +1,3 @@
-function sendToDB(data) {
-    // Configuração da requisição
-    const requestOptions = {
-      method: 'POST', // Você pode ajustar o método conforme necessário
-      headers: {
-        'Content-Type': 'application/json'
-        // Adicione headers adicionais se necessário
-      },
-      body: JSON.stringify(data) // Converte o objeto JSON para uma string
-    };
-  
-    // Faz a requisição para o controlador /nomes
-    fetch('/nomes', requestOptions)
-      .then(response => {
-        // Verifica se a resposta da requisição foi bem-sucedida
-        if (!response.ok) {
-          throw new Error('Erro na requisição para /nomes');
-        }
-        // Pode retornar a resposta se necessário
-        return response.json();
-      })
-      .then(data => {
-        // Lida com os dados da resposta, se necessário
-        console.log('Resposta do servidor:', data);
-      })
-      .catch(error => {
-        // Lida com erros durante a requisição
-        console.error('Erro na requisição:', error.message);
-      });
-}
-
 $(document).ready(function () {
     // Popule a lista de estados (substitua com seus dados reais)
     var states = [];
@@ -158,4 +127,33 @@ $(document).ready(function () {
     }
 });
 
-
+function sentToDB(data) {
+    // Configuração da requisição
+    const requestOptions = {
+      method: 'POST', // Você pode ajustar o método conforme necessário
+      headers: {
+        'Content-Type': 'application/json'
+        // Adicione headers adicionais se necessário
+      },
+      body: JSON.stringify(data) // Converte o objeto JSON para uma string
+    };
+  
+    // Faz a requisição para o controlador /nomes
+    fetch('/nomes', requestOptions)
+      .then(response => {
+        // Verifica se a resposta da requisição foi bem-sucedida
+        if (!response.ok) {
+          throw new Error('Erro na requisição para /nomes');
+        }
+        // Pode retornar a resposta se necessário
+        return response.json();
+      })
+      .then(data => {
+        // Lida com os dados da resposta, se necessário
+        console.log('Resposta do servidor:', data);
+      })
+      .catch(error => {
+        // Lida com erros durante a requisição
+        console.error('Erro na requisição:', error.message);
+      });
+}
