@@ -5,7 +5,7 @@ import com.company.local_name.model.Regiao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+//import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +17,11 @@ public class PgRegiaoDAO implements RegiaoDAO{
         this.connection = connection;
     }
 
-    private static final String CREATE_REGIAO   = "INSERT INTO local_names_db.regiao(id, nome_regiao, sigla_regiao)" + "VALUES (?,?,?)";
-    private static final String GET_REGIAO      = "SELECT * FROM local_names_db.regiao WHERE id = ? AND sigla_regiao = ?";
+    private static final String CREATE_REGIAO   = "INSERT INTO local_names_db.regiao(id, sigla, nome)" + "VALUES (?,?,?)";
+    private static final String GET_REGIAO      = "SELECT * FROM local_names_db.regiao WHERE id = ? AND sigla = ?";
     private static final String GET_ALL_REGIOES = "SELECT * FROM local_names_db.regiao";
-    private static final String UPDATE_REGIAO   = "UPDATE * FROM local_names_db.regiao SET id=?, nome_regiao=?, sigla_regiao=? WHERE sigla_regiao = ? AND id = ?";
-    private static final String DELETE_REGIAO   = "DELETE * FROM local_names_db.regiao  WHERE sigla_regiao = ? AND id = ?";
+    private static final String UPDATE_REGIAO   = "UPDATE * FROM local_names_db.regiao SET id=?, nome=?, sigla=? WHERE sigla = ? AND id = ?";
+    private static final String DELETE_REGIAO   = "DELETE * FROM local_names_db.regiao  WHERE sigla = ? AND id = ?";
 
 
     @Override
@@ -50,7 +50,7 @@ public class PgRegiaoDAO implements RegiaoDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                regiao = new Regiao(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla"));
+                regiao = new Regiao(statement.getResultSet().getString("id"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("nome"));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -68,7 +68,7 @@ public class PgRegiaoDAO implements RegiaoDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                regioes.add( new Regiao(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla")));
+                regioes.add( new Regiao(statement.getResultSet().getString("id"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("nome")));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -82,8 +82,8 @@ public class PgRegiaoDAO implements RegiaoDAO{
     public void update(Regiao object) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_REGIAO)) {
             statement.setString(1, object.getId());
-            statement.setString(2, object.getNome());
-            statement.setString(3, object.getSigla());
+            statement.setString(2, object.getSigla());
+            statement.setString(3, object.getNome());
 
             statement.execute();
         } catch (SQLException ex) {
@@ -95,8 +95,8 @@ public class PgRegiaoDAO implements RegiaoDAO{
     @Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_REGIAO)) {
-            statement.setString(1, ((Regiao) key).getSigla());
             statement.setString(1, ((Regiao) key).getId());
+            statement.setString(1, ((Regiao) key).getSigla());
             statement.execute();
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());

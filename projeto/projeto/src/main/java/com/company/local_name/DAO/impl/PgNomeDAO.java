@@ -17,10 +17,10 @@ public class PgNomeDAO implements NomeDAO{
         this.connection = connection;
     }
 
-    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(cidade, nome, frequencia, ranking)" + "VALUES (?,?,?,?)";
+    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(cidade, nome, frequencia, rank)" + "VALUES (?,?,?,?)";
     private static final String GET_NOME      = "SELECT * FROM local_names_db.nome WHERE cidade = ? AND nome = ?";
     private static final String GET_ALL_NOMES = "SELECT * FROM local_names_db.nome";
-    private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, ranking=? WHERE nome = ? AND cidade = ?";
+    private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, rank=? WHERE nome = ? AND cidade = ?";
     private static final String DELETE_NOME   = "DELETE * FROM local_names_db.nome  WHERE nome = ? AND cidade = ?";
 
 
@@ -29,8 +29,8 @@ public class PgNomeDAO implements NomeDAO{
         try (PreparedStatement statement = connection.prepareStatement(CREATE_NOME)) {
 
             statement.setString(1, object.getCidade());
-            statement.setInt(2, object.getFrequencia());
-            statement.setString(3, object.getNome());
+            statement.setString(2, object.getNome());
+            statement.setInt(3, object.getFrequencia());
             statement.setInt(4, object.getRank());
 
             statement.execute();
@@ -46,12 +46,12 @@ public class PgNomeDAO implements NomeDAO{
 
         Nome nome = null;
         try (PreparedStatement statement = connection.prepareStatement(GET_NOME)) {
-            statement.setString(1, ((Nome) key).getNome());
-            statement.setString(2, ((Nome) key).getCidade());
+            statement.setString(1, ((Nome) key).getCidade());
+            statement.setString(2, ((Nome) key).getNome());
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                nome = new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("ranking"));
+                nome = new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank"));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -69,7 +69,7 @@ public class PgNomeDAO implements NomeDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                nomes.add( new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("ranking")));
+                nomes.add( new Nome(statement.getResultSet().getString("cidade"), statement.getResultSet().getString("nome"), statement.getResultSet().getInt("frequencia"), statement.getResultSet().getInt("rank")));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());

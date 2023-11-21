@@ -4,13 +4,13 @@ public class Estado {
     private String id;
     private String nome;
     private String sigla;
-    private String sigla_regiao;
+    private String sigla_reg;
 
-    public Estado(String id, String nome, String sigla, String sigla_regiao) {
+    public Estado(String id, String nome, String sigla, String sigla_reg) {
         this.id = id;
         this.nome = nome;
         this.sigla = sigla;
-        this.sigla_regiao = sigla_regiao;
+        this.sigla_reg = sigla_reg;
     }
 
     public String getId() {
@@ -38,11 +38,11 @@ public class Estado {
     }
 
     public String getSigla_regiao() {
-        return sigla_regiao;
+        return sigla_reg;
     }
 
-    public void setSigla_regiao(String sigla_regiao) {
-        this.sigla_regiao = sigla_regiao;
+    public void setSigla_regiao(String sigla_reg) {
+        this.sigla_reg = sigla_reg;
     }
 
 }

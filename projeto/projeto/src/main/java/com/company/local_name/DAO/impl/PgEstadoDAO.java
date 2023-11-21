@@ -16,11 +16,11 @@ public class PgEstadoDAO implements EstadoDAO{
         this.connection = connection;
     }
 
-    private static final String CREATE_ESTADO = "INSERT INTO local_names_db.estado(id, nome_estado, sigla_estado, sigla_regiao)" + "VALUES (?,?,?,?)";
-    private static final String GET_ESTADO = "SELECT * FROM local_names_db.estado WHERE id = ? AND sigla_estado = ?";
+    private static final String CREATE_ESTADO = "INSERT INTO local_names_db.estado(id, nome, sigla, sigla_reg)" + "VALUES (?,?,?,?)";
+    private static final String GET_ESTADO = "SELECT * FROM local_names_db.estado WHERE id = ? AND sigla = ?";
     private static final String GET_ALL_ESTADOS = "SELECT * FROM local_names_db.estado";
-    private static final String UPDATE_ESTADO = "UPDATE * FROM local_names_db.estado SET id=?, nome_estado=?, sigla_estado=? WHERE sigla_estado = ? AND id = ?";
-    private static final String DELETE_ESTADO = "DELETE * FROM local_names_db.estado  WHERE sigla_estado = ? AND id = ?";
+    private static final String UPDATE_ESTADO = "UPDATE * FROM local_names_db.estado SET id=?, nome=?, sigla=? WHERE sigla = ? AND id = ?";
+    private static final String DELETE_ESTADO = "DELETE * FROM local_names_db.estado  WHERE sigla = ? AND id = ?";
 
     @Override
     public void create(Estado object) throws SQLException {
@@ -49,7 +49,7 @@ public class PgEstadoDAO implements EstadoDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                estado = new Estado(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("sigla_regiao"));
+                estado = new Estado(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("sigla_reg"));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -67,7 +67,7 @@ public class PgEstadoDAO implements EstadoDAO{
             statement.executeQuery();
 
             while (statement.getResultSet().next()) {
-                estados.add( new Estado(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("sigla_regiao")));
+                estados.add( new Estado(statement.getResultSet().getString("id"), statement.getResultSet().getString("nome"), statement.getResultSet().getString("sigla"), statement.getResultSet().getString("sigla_reg")));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -95,8 +95,8 @@ public class PgEstadoDAO implements EstadoDAO{
     @Override
     public void delete(Object key) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(DELETE_ESTADO)) {
-            statement.setString(1, ((Estado) key).getSigla());
             statement.setString(1, ((Estado) key).getId());
+            statement.setString(1, ((Estado) key).getSigla());
             statement.execute();
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
