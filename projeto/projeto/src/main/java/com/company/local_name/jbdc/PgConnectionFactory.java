@@ -21,7 +21,7 @@ public class PgConnectionFactory extends ConnectionFactory {
         Properties properties = new Properties();
 
         try {
-            InputStream inputStream = new FileInputStream("src/main/resources/application.properties");
+            InputStream inputStream = new FileInputStream("application.properties");
             properties.load(inputStream);
 
             url = properties.getProperty("spring.datasource.url");

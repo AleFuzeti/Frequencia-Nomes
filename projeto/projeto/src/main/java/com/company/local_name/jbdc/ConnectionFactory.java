@@ -1,4 +1,4 @@
-package main.java.jbdc;
+package com.company.local_name.jbdc;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,9 +9,9 @@ import java.util.Properties;
 public abstract class ConnectionFactory {
 
     private static ConnectionFactory instance = null;
-    protected static String propertiesPath = "../../conf/datasource.properties";
+    protected static String propertiesPath = "application.properties";
     private static String dbServer;
-    
+
     protected ConnectionFactory() {
     }
 
@@ -40,11 +40,11 @@ public abstract class ConnectionFactory {
 
         return instance;
     }
-    
+
     public static String getDbServer() {
         return dbServer;
     }
 
     public abstract Connection getConnection() throws IOException, SQLException, ClassNotFoundException;
-    
+
 }
