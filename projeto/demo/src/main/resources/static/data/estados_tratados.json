@@ -1,0 +1,164 @@
+[
+  {
+    "id": 11,
+    "sigla": "RO",
+    "nome": "Rondônia",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 12,
+    "sigla": "AC",
+    "nome": "Acre",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 13,
+    "sigla": "AM",
+    "nome": "Amazonas",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 14,
+    "sigla": "RR",
+    "nome": "Roraima",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 15,
+    "sigla": "PA",
+    "nome": "Pará",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 16,
+    "sigla": "AP",
+    "nome": "Amapá",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 17,
+    "sigla": "TO",
+    "nome": "Tocantins",
+    "sigla_reg": "N"
+  },
+  {
+    "id": 21,
+    "sigla": "MA",
+    "nome": "Maranhão",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 22,
+    "sigla": "PI",
+    "nome": "Piauí",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 23,
+    "sigla": "CE",
+    "nome": "Ceará",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 24,
+    "sigla": "RN",
+    "nome": "Rio Grande do Norte",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 25,
+    "sigla": "PB",
+    "nome": "Paraíba",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 26,
+    "sigla": "PE",
+    "nome": "Pernambuco",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 27,
+    "sigla": "AL",
+    "nome": "Alagoas",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 28,
+    "sigla": "SE",
+    "nome": "Sergipe",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 29,
+    "sigla": "BA",
+    "nome": "Bahia",
+    "sigla_reg": "NE"
+  },
+  {
+    "id": 31,
+    "sigla": "MG",
+    "nome": "Minas Gerais",
+    "sigla_reg": "SE"
+  },
+  {
+    "id": 32,
+    "sigla": "ES",
+    "nome": "Espírito Santo",
+    "sigla_reg": "SE"
+  },
+  {
+    "id": 33,
+    "sigla": "RJ",
+    "nome": "Rio de Janeiro",
+    "sigla_reg": "SE"
+  },
+  {
+    "id": 35,
+    "sigla": "SP",
+    "nome": "São Paulo",
+    "sigla_reg": "SE"
+  },
+  {
+    "id": 41,
+    "sigla": "PR",
+    "nome": "Paraná",
+    "sigla_reg": "S"
+  },
+  {
+    "id": 42,
+    "sigla": "SC",
+    "nome": "Santa Catarina",
+    "sigla_reg": "S"
+  },
+  {
+    "id": 43,
+    "sigla": "RS",
+    "nome": "Rio Grande do Sul",
+    "sigla_reg": "S"
+  },
+  {
+    "id": 50,
+    "sigla": "MS",
+    "nome": "Mato Grosso do Sul",
+    "sigla_reg": "CO"
+  },
+  {
+    "id": 51,
+    "sigla": "MT",
+    "nome": "Mato Grosso",
+    "sigla_reg": "CO"
+  },
+  {
+    "id": 52,
+    "sigla": "GO",
+    "nome": "Goiás",
+    "sigla_reg": "CO"
+  },
+  {
+    "id": 53,
+    "sigla": "DF",
+    "nome": "Distrito Federal",
+    "sigla_reg": "CO"
+  }
+]
