@@ -103,7 +103,7 @@ $(document).ready(function () {
                 },
                 error: function (error) {
                     console.error('Erro na requisição à API:', error);
-                    $('#apiResponse').html('Erro na requisição à API: ' + JSON.stringify(error));
+                    $('#namesList').html('Erro na requisição à API: ' + JSON.stringify(error));
                 }
             });
         } else {
