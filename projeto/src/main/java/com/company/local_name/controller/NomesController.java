@@ -78,11 +78,11 @@ public class NomesController {
         try{
             String nomesUrl = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=" + localidade;
             String nomesResponse = HttpUtil.fetchDataFromAPI(nomesUrl);
-            JsonNode regioesJsonArray = prettyObjectMapper.readTree(nomesResponse);
+            JsonNode nomesJsonArray = prettyObjectMapper.readTree(nomesResponse);
             System.out.println("Dados dos nomes corretos!! Tentativa de conectar ao banco.....");
-            System.out.println("Dados: " + regioesJsonArray);
+            System.out.println("Dados: " + nomesJsonArray);
             // inserir no banco de dados
-            for (JsonNode name : regioesJsonArray) {
+            for (JsonNode name : nomesJsonArray) {
                 String nome = name.get("nome").asText();
                 int frequencia = name.get("frequencia").asInt();
                 int rank = name.get("ranking").asInt();
