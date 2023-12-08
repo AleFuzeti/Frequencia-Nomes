@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html xmlns ns th="http://www.thymeleaf.org" lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inserção de Nome</title>
+    <title>Análise Nome-Local</title>
     <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}" defer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
     <script th:src="@{home.js}" defer></script>
     <script th:src="@{relatorio.js}" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
+
 <body>
 
 <div class="container col-4">
-    <div>
-        <h1>Rank de Nomes por Localidade</h1>
-    </div>
-
-    <form id="myForm">
+    <h1 class="col-12">Rank de Nomes por Localidade</h1>
+    <form id="myForm" class="col-12">
         <div class="form-group">
             <label for="addressRegiao">* Região</label>
             <select id="addressRegiao" name="region_id" class="form-control required">
@@ -29,17 +27,11 @@
         </div>
         <div class="form-group">
             <label for="addressEstado">* Estado</label>
-            <select id="addressEstado" name="state_id" class="form-control required">
-                <option value="">Selecione</option>
-                <!-- Opções de Estado aqui -->
-            </select>
+            <select id="addressEstado" name="state_id" class="form-control required"></select>
         </div>
         <div class="form-group">
             <label for="addressCidade">* Cidade</label>
-            <select id="addressCidade" name="city_id" class="form-control required">
-                <option value="">Selecione</option>
-                <!-- Opções de Cidade aqui -->
-            </select>
+            <select id="addressCidade" name="city_id" class="form-control required"></select>
         </div>
         <div class="form-group">
             <button class="submit" type="submit">Submit</button>
@@ -48,15 +40,14 @@
 </div>
 
 <div class="container col-8 h-100">
-    <table><div id="namesList"></div></table>
-
-    <!-- Div para exibir o gráfico -->
+    <table>
+        <div id="namesList"></div>
+    </table>
     <canvas id="myChart"></canvas>
     <div id="legend"></div>
-
-    <!-- Botão para alternar entre gráficos -->
     <button id="toggleChart">Alternar Gráfico</button>
 </div>
 
 </body>
+
 </html>
