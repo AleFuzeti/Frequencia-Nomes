@@ -85,7 +85,7 @@ public class NomesController {
             for (JsonNode name : regioesJsonArray) {
                 String nome = name.get("nome").asText();
                 int frequencia = name.get("frequencia").asInt();
-                int rank = name.get("rank").asInt();
+                int rank = name.get("ranking").asInt();
 
                 try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
                     System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
