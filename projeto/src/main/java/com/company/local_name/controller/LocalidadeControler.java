@@ -59,8 +59,8 @@ public class LocalidadeControler {
             while (resultSet.next()) {
                 Regiao regiao = new Regiao(
                         resultSet.getString("id"),
-                        resultSet.getString("nome"),
-                        resultSet.getString("sigla")
+                        resultSet.getString("sigla"),
+                        resultSet.getString("nome")
                 );
                 regioes.add(regiao);
             }

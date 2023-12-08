@@ -10,7 +10,7 @@ $(document).ready(function () {
             regions = data;
             var regionSelect = $('#addressRegiao');
             regions.forEach(function (region) {
-                regionSelect.append('<option value="' + region.id + '">' + region.nome + '</option>');
+                regionSelect.append('<option value="' + region.sigla + '">' + region.nome + '</option>');
             });
 
             regionSelect.on('change', function () {
@@ -23,7 +23,8 @@ $(document).ready(function () {
     });
 
     function setStates() {
-        var regionId = $('#addressRegiao').val();
+        // value do select de regiões
+        var regionSigla = $('#addressRegiao').val();
         $.ajax({
             url: '/api/localidades/estados',
             dataType: 'json',
@@ -31,8 +32,11 @@ $(document).ready(function () {
                 states = data;
                 console.log('Estados:', states);
 
+                console.log('Sigla da região:', regionSigla);
+
                 var filteredStates = states.filter(function (state) {
-                    return state.regiao.id == regionId;
+                    console.log('State.sigla_region:', state.sigla_region);
+                    return state.sigla_regiao == regionSigla;
                 });
 
                 console.log('Estados filtrados:', filteredStates);
