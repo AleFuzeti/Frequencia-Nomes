@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Component;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,18 +23,19 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/localidades")
+@Component
 public class LocalidadeControler {
 
-    private final PgRegiaoDAO regiaoDAO;
-    private final PgEstadoDAO estadoDAO;
-    private final PgCidadeDAO cidadeDAO;
+//    private final PgRegiaoDAO regiaoDAO;
+//    private final PgEstadoDAO estadoDAO;
+//    private final PgCidadeDAO cidadeDAO;
 
-    @Autowired
-    public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
-        this.regiaoDAO = regiaoDAO;
-        this.estadoDAO = estadoDAO;
-        this.cidadeDAO = cidadeDAO;
-    }
+//    @Autowired
+//    public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
+//        this.regiaoDAO = regiaoDAO;
+//        this.estadoDAO = estadoDAO;
+//        this.cidadeDAO = cidadeDAO;
+//    }
 
     @GetMapping("/estados")
     public List<Estado> getEstados() {
@@ -53,7 +56,7 @@ public class LocalidadeControler {
                         resultSet.getString("id"),
                         resultSet.getString("nome"),
                         resultSet.getString("sigla"),
-                        resultSet.getString("id_regiao")
+                        resultSet.getString("sigla_reg")
                 );
                 estados.add(estado);
             } else {
