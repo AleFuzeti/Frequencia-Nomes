@@ -1,5 +1,3 @@
-package com.company.local_name.controller;
-
 import com.company.local_name.DAO.impl.PgNomeDAO;
 import com.company.local_name.model.Nome;
 import java.sql.SQLException;
@@ -32,4 +30,7 @@ public class NomesController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create Nome");
         }
     }
+
+    
+
 }
