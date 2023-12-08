@@ -105,31 +105,4 @@ $(document).ready(function () {
         }
     });
 
-    function formatAndDisplayData(data) {
-        // Implemente a formatação dos dados conforme necessário
-    }
-
-    function sendToDB(data) {
-        var requestOptions = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        };
-
-        fetch('/nomes', requestOptions)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro na requisição para /nomes');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Resposta do servidor:', data);
-            })
-            .catch(error => {
-                console.error('Erro na requisição:', error.message);
-            });
-    }
 });
