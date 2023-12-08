@@ -86,7 +86,7 @@ $(document).ready(function () {
         if (selectedCity) {
 
             // Ajuste a URL conforme necessário com base na estrutura do seu controlador
-            var apiUrl = '/api/nomes?localidade=' + selectedCity;
+            var apiUrl = '/api/nomes' + selectedCity;
 
             $.ajax({
                 url: apiUrl,
