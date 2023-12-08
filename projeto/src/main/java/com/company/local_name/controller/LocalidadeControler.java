@@ -32,16 +32,14 @@ import java.util.List;
 @Component
 public class LocalidadeControler {
 
-    // private PgRegiaoDAO regiaoDAO;
-    // private PgEstadoDAO estadoDAO;
-    // private PgCidadeDAO cidadeDAO;
-
-    // @Autowired
-    // public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
-    //     this.regiaoDAO = regiaoDAO;
-    //     this.estadoDAO = estadoDAO;
-    //     this.cidadeDAO = cidadeDAO;
-    // }
+//     private PgRegiaoDAO regiaoDAO;
+//     private PgEstadoDAO estadoDAO;
+//     private PgCidadeDAO cidadeDAO;
+//     public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
+//         this.regiaoDAO = regiaoDAO;
+//         this.estadoDAO = estadoDAO;
+//         this.cidadeDAO = cidadeDAO;
+//     }
 
     private static final String DB_URL = "jdbc:postgresql://sicm.dc.uel.br:5432/matheus";
     private static final String DB_USER = "matheus";
