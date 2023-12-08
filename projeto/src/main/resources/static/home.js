@@ -85,13 +85,14 @@ $(document).ready(function () {
     
         if (selectedCity) {
             // Ajuste a URL para incluir o parâmetro localidade
-            var apiUrl = '/api/nomes/nomes?localidade=' + selectedCity;
+            var apiUrl = '/api/nomes/nomes?localidade=' + selectedCity.value1;
     
             $.ajax({
                 url: apiUrl,
                 dataType: 'json',
                 success: function (data) {
                     var names = data;
+                    console.log('Nomes encontrados:', names);
                     var namesList = $('#namesList');
                     namesList.empty();
                     names.forEach(function (name) {
