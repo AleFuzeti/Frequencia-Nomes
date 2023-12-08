@@ -30,10 +30,13 @@ $(document).ready(function () {
             dataType: 'json',
             success: function (data) {
                 states = data;
+                console.log('Estados:', states);
 
                 var filteredStates = states.filter(function (state) {
                     return state.regiao.id == regionId;
                 });
+
+                console.log('Estados filtrados:', filteredStates);
 
                 var stateSelect = $('#addressEstado');
                 stateSelect.empty();
