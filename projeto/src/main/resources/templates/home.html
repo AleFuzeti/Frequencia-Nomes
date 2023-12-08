@@ -6,7 +6,9 @@
     <title>Inserção de Nome</title>
     <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}" defer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script th:src="@{home.js}" defer></script>
+    <script th:src="@{relatorio.js}" defer></script>
 </head>
 <body>
 
@@ -48,6 +50,7 @@
 
 <div class="container col-8 h-100">
     <div id="namesList"></div>
+    <canvas id="myChart"></canvas>
 </div>
 
 </body>
