@@ -7,6 +7,7 @@ import com.company.local_name.model.Nome;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,13 +20,13 @@ import java.util.List;
 @Component
 public class NomesController {
 
-//    private final PgNomeDAO nomeDAO;
-//
-//    @Autowired
-//    public NomesController(PgNomeDAO nomeDAO) {
-//        this.nomeDAO = nomeDAO;
-//    }
+     @Autowired
+     private final PgNomeDAO nomeDAO;
 
+     @Autowired
+     public NomesController(PgNomeDAO nomeDAO) {
+         this.nomeDAO = nomeDAO;
+     }
 
     private static final String DB_URL = "jdbc:postgresql://sicm.dc.uel.br:5432/matheus";
     private static final String DB_USER = "matheus";
@@ -91,15 +92,8 @@ public class NomesController {
                         int frequencia = nomeNode.get("frequencia").asInt();
                         int rank = nomeNode.get("ranking").asInt();
 
-                        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                            System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                            insertNome(connection, localidade, nome, frequencia, rank);
-                        } catch (SQLException e) {
-                            System.out.println("Erro ao conectar ao banco de dados");
-                            e.printStackTrace();
-                        }
-
                         Nome nomee = new Nome(localidade, nome, frequencia, rank);
+                        nomeDAO.create(nomee);
                         nomes.add(nomee);
                     }
                 } else {
@@ -114,20 +108,5 @@ public class NomesController {
         }
 
         return nomes;
-    }
-
-    private static void insertNome(Connection connection, String localidade ,String nome, int frequencia, int ranking) {
-        String sql = "INSERT INTO local_names_db.nome (localidade, nome, frequencia, ranking) VALUES (?, ?, ?, ?)";
-        try (PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, localidade);
-            statement.setString(2, nome);
-            statement.setInt(3, frequencia);
-            statement.setInt(4, ranking);
-            statement.executeUpdate();
-            System.out.println("Nome inserido com sucesso!");
-        } catch (SQLException e) {
-            System.out.println("Erro ao inserir nome");
-            e.printStackTrace();
-        }
     }
 }

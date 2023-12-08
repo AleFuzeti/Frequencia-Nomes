@@ -1,5 +1,9 @@
 package com.company.local_name.jbdc;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,10 +11,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 
+@Configuration
 public class PgConnectionFactory extends ConnectionFactory {
-
+    @Value("${spring.datasource.url}")
     private String url;
+    @Value("${spring.datasource.username}")
     private String username;
+    @Value("${spring.datasource.password}")
     private String password;
 
     public PgConnectionFactory() {
@@ -34,7 +41,7 @@ public class PgConnectionFactory extends ConnectionFactory {
         }
 
     }
-
+    @Bean
     @Override
     public Connection getConnection() throws IOException, SQLException, ClassNotFoundException {
 

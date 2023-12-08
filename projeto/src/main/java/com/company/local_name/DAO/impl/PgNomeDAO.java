@@ -2,6 +2,7 @@ package com.company.local_name.DAO.impl;
 
 import com.company.local_name.DAO.NomeDAO;
 import com.company.local_name.model.Nome;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class PgNomeDAO implements NomeDAO{
     private Connection connection;
 
@@ -18,7 +20,7 @@ public class PgNomeDAO implements NomeDAO{
         this.connection = connection;
     }
 
-    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(localidade, nome, frequencia, rank)" + "VALUES (?,?,?,?)";
+    private static final String CREATE_NOME   = "INSERT INTO local_names_db.nome(localidade, nome, frequencia, ranking)" + "VALUES (?,?,?,?)";
     private static final String GET_NOME      = "SELECT * FROM local_names_db.nome WHERE localidade = ? AND nome = ?";
     private static final String GET_ALL_NOMES = "SELECT * FROM local_names_db.nome";
     private static final String UPDATE_NOME   = "UPDATE * FROM local_names_db.nome SET frequencia=?, rank=? WHERE nome = ? AND localidade = ?";

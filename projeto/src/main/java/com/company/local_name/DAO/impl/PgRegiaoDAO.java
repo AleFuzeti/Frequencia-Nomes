@@ -2,6 +2,7 @@ package com.company.local_name.DAO.impl;
 
 import com.company.local_name.DAO.RegiaoDAO;
 import com.company.local_name.model.Regiao;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class PgRegiaoDAO implements RegiaoDAO{
     private Connection connection;
 

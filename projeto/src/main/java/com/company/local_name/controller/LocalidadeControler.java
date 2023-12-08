@@ -32,14 +32,18 @@ import java.util.List;
 @Component
 public class LocalidadeControler {
 
-//     private PgRegiaoDAO regiaoDAO;
-//     private PgEstadoDAO estadoDAO;
-//     private PgCidadeDAO cidadeDAO;
-//     public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
-//         this.regiaoDAO = regiaoDAO;
-//         this.estadoDAO = estadoDAO;
-//         this.cidadeDAO = cidadeDAO;
-//     }
+     @Autowired
+     private PgEstadoDAO estadoDAO;
+     @Autowired
+     private PgRegiaoDAO regiaoDAO;
+     @Autowired
+     private PgCidadeDAO cidadeDAO;
+     @Autowired
+     public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
+         this.regiaoDAO = regiaoDAO;
+         this.estadoDAO = estadoDAO;
+         this.cidadeDAO = cidadeDAO;
+     }
 
     private static final String DB_URL = "jdbc:postgresql://sicm.dc.uel.br:5432/matheus";
     private static final String DB_USER = "matheus";
@@ -149,16 +153,9 @@ public class LocalidadeControler {
                 String id = regiao.get("id").asText();
                 String sigla = regiao.get("sigla").asText();
                 String nome = regiao.get("nome").asText();
-                
-                try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                    System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                    insertRegiao(connection, id, sigla, nome);
-                } catch (SQLException e) {
-                    System.out.println("Erro ao conectar ao banco de dados");
-                    e.printStackTrace();
-                }
+
                 Regiao regiaoo = new Regiao(id, sigla, nome);
-                //regiaoDAO.create(regiaoo);
+                regiaoDAO.create(regiaoo);
                 regioes.add(regiaoo);
             }        
             return regioes;
@@ -185,15 +182,8 @@ public class LocalidadeControler {
                 String sigla = estado.get("sigla").asText();
                 String siglaReg = estado.get("regiao").get("sigla").asText();
 
-                try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                    System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                    insertEstado(connection, id, nome, sigla, siglaReg);
-                } catch (SQLException e) {
-                    System.out.println("Erro ao conectar ao banco de dados");
-                    e.printStackTrace();
-                }
                 Estado estadoo = new Estado(id, nome, sigla, siglaReg);
-                //estadoDAO.create(estadoo);
+                estadoDAO.create(estadoo);
                 estados.add(estadoo);
             }
             return estados;
@@ -233,15 +223,8 @@ public class LocalidadeControler {
                     String nome = municipio.get("nome").asText();
                     String siglaEstado = municipio.get("microrregiao").get("mesorregiao").get("UF").get("sigla").asText();
 
-                    try (Connection connection2 = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                        //System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                        insertCidade(connection2, id, nome, siglaEstado);
-                    } catch (SQLException e) {
-                        System.out.println("Erro ao conectar ao banco de dados");
-                        e.printStackTrace();
-                    }
                     Cidade cidade = new Cidade(id, nome, siglaEstado);
-                    //cidadeDAO.create(cidade);
+                    cidadeDAO.create(cidade);
                     cidades.add(cidade);
                 }
                 return cidades;
@@ -258,46 +241,4 @@ public class LocalidadeControler {
         return cidades;
     }
 
-    private static void insertRegiao(Connection connection, String id, String sigla, String nome) {
-        String sql = "INSERT INTO local_names_db.regiao (id, sigla, nome) VALUES (?, ?, ?)";
-        try (PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, id);
-            statement.setString(2, sigla);
-            statement.setString(3, nome);
-            statement.executeUpdate();
-            //System.out.println("Região inserida com sucesso!");
-        } catch (SQLException e) {
-            System.out.println("Erro ao inserir região");
-            e.printStackTrace();
-        }
-    }
-
-    private static void insertEstado(Connection connection, String id, String nome, String sigla, String siglaReg) {
-        String sql = "INSERT INTO local_names_db.estado (id, nome, sigla, sigla_reg) VALUES (?, ?, ?, ?)";
-        try (PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, id);
-            statement.setString(2, nome);
-            statement.setString(3, sigla);
-            statement.setString(4, siglaReg);
-            statement.executeUpdate();
-            //System.out.println("Estado inserido com sucesso!");
-        } catch (SQLException e) {
-            System.out.println("Erro ao inserir estado");
-            e.printStackTrace();
-        }
-    }
-
-    private static void insertCidade(Connection connection, String id, String nome, String siglaEstado) {
-        String sql = "INSERT INTO local_names_db.cidade (id, nome, sigla_estado) VALUES (?, ?, ?)";
-        try (PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, id);
-            statement.setString(2, nome);
-            statement.setString(3, siglaEstado);
-            statement.executeUpdate();
-            //System.out.println("Cidade inserida com sucesso!");
-        } catch (SQLException e) {
-            System.out.println("Erro ao inserir cidade");
-            e.printStackTrace();
-        }
-    }
 }

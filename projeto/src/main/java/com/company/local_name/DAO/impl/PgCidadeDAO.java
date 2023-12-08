@@ -2,6 +2,7 @@ package com.company.local_name.DAO.impl;
 
 import com.company.local_name.DAO.CidadeDAO;
 import com.company.local_name.model.Cidade;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class PgCidadeDAO implements CidadeDAO{
 
     private final Connection connection;
