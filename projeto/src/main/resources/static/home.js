@@ -69,7 +69,7 @@ $(document).ready(function () {
                 citySelect.append('<option value="">Selecione</option>');
 
                 filteredCities.forEach(function (city) {
-                    citySelect.append('<option value="' + city.id + '">' + city.nome + '</option>');
+                    citySelect.append('<option value=\'{"value1": "'+ city.id + '","value2":"'+city.nome+'"} >' + city.nome + '</option>');
                 });
             },
             error: function (error) {
@@ -80,20 +80,23 @@ $(document).ready(function () {
 
     $('#myForm').submit(function (event) {
         event.preventDefault();
-
+    
         var selectedCity = $('#addressCidade').val();
-
+    
         if (selectedCity) {
-
-            // Ajuste a URL conforme necessário com base na estrutura do seu controlador
-            var apiUrl = '/api/nomes' + selectedCity;
-
+            // Ajuste a URL para incluir o parâmetro localidade
+            var apiUrl = '/api/nomes/nomes?localidade=' + selectedCity;
+    
             $.ajax({
                 url: apiUrl,
                 dataType: 'json',
                 success: function (data) {
-                    formatAndDisplayData(data);
-                    sendToDB(data);
+                    var names = data;
+                    var namesList = $('#namesList');
+                    namesList.empty();
+                    names.forEach(function (name) {
+                        namesList.append('<li>' + name.nome + '</li>');
+                    });
                 },
                 error: function (error) {
                     console.error('Erro na requisição à API:', error);
@@ -104,5 +107,4 @@ $(document).ready(function () {
             alert('Por favor, preencha todos os campos antes de enviar o formulário.');
         }
     });
-
 });
