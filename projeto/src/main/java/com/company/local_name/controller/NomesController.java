@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/nomes")
+@RequestMapping("/api/nomes")
 @Component
 public class NomesController {
 
@@ -76,7 +76,7 @@ public class NomesController {
     public List<Nome> ranking_nomes(List<Nome> nomes, String localidade) {
         ObjectMapper prettyObjectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
         try{
-            String nomesUrl = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=3300100";
+            String nomesUrl = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking?localidade=" + localidade;
             String nomesResponse = HttpUtil.fetchDataFromAPI(nomesUrl);
             JsonNode regioesJsonArray = prettyObjectMapper.readTree(nomesResponse);
             System.out.println("Dados dos nomes corretos!! Tentativa de conectar ao banco.....");

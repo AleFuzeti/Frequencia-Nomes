@@ -81,14 +81,12 @@ $(document).ready(function () {
     $('#myForm').submit(function (event) {
         event.preventDefault();
 
-        var selectedState = $('#addressEstado').val();
         var selectedCity = $('#addressCidade').val();
 
-        if (selectedState && selectedCity) {
-            console.log('Cidade:', selectedCity);
+        if (selectedCity) {
 
             // Ajuste a URL conforme necessário com base na estrutura do seu controlador
-            var apiUrl = '/api/localidades/' + selectedCity;
+            var apiUrl = '/api/nomes?localidade=' + selectedCity;
 
             $.ajax({
                 url: apiUrl,

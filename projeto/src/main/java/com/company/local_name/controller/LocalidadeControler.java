@@ -131,7 +131,7 @@ public class LocalidadeControler {
                 cidades = populateCities(cidades);
             }
             return cidades;
-            
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -227,7 +227,7 @@ public class LocalidadeControler {
                 String municipiosUrl = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + ufIds + "/municipios";
                 String municipiosResponse = HttpUtil.fetchDataFromAPI(municipiosUrl);
                 JsonNode municipiosJsonArray = prettyObjectMapper.readTree(municipiosResponse);
-                System.out.println("Dados dos municípios corretos!! Tentativa de conectar ao banco.....");
+                //System.out.println("Dados dos municípios corretos!! Tentativa de conectar ao banco.....");
 
                 // tratar e inserir no banco de dados
                 for (JsonNode municipio : municipiosJsonArray) {
@@ -236,7 +236,7 @@ public class LocalidadeControler {
                     String siglaEstado = municipio.get("microrregiao").get("mesorregiao").get("UF").get("sigla").asText();
 
                     try (Connection connection2 = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                        System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
+                        //System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
                         insertCidade(connection2, id, nome, siglaEstado);
                     } catch (SQLException e) {
                         System.out.println("Erro ao conectar ao banco de dados");
@@ -267,7 +267,7 @@ public class LocalidadeControler {
             statement.setString(2, sigla);
             statement.setString(3, nome);
             statement.executeUpdate();
-            System.out.println("Região inserida com sucesso!");
+            //System.out.println("Região inserida com sucesso!");
         } catch (SQLException e) {
             System.out.println("Erro ao inserir região");
             e.printStackTrace();
@@ -282,7 +282,7 @@ public class LocalidadeControler {
             statement.setString(3, sigla);
             statement.setString(4, siglaReg);
             statement.executeUpdate();
-            System.out.println("Estado inserido com sucesso!");
+            //System.out.println("Estado inserido com sucesso!");
         } catch (SQLException e) {
             System.out.println("Erro ao inserir estado");
             e.printStackTrace();
@@ -296,7 +296,7 @@ public class LocalidadeControler {
             statement.setString(2, nome);
             statement.setString(3, siglaEstado);
             statement.executeUpdate();
-            System.out.println("Cidade inserida com sucesso!");
+            //System.out.println("Cidade inserida com sucesso!");
         } catch (SQLException e) {
             System.out.println("Erro ao inserir cidade");
             e.printStackTrace();
