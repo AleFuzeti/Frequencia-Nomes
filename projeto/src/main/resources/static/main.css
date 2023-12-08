@@ -116,3 +116,7 @@ th {
     position: absolute;
     top: 132px;
 }
+
+.gray{
+    background-color: #c0c0c0;
+}
