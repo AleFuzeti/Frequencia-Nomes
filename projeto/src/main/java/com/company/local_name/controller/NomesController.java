@@ -83,20 +83,36 @@ public class NomesController {
             System.out.println("Dados: " + nomesJsonArray);
             // inserir no banco de dados
             for (JsonNode name : nomesJsonArray) {
-                String nome = name.get("nome").asText();
-                int frequencia = name.get("frequencia").asInt();
-                int rank = name.get("ranking").asInt();
+                // Acesse o array 'res' dentro de cada objeto
+                JsonNode resArray = name.get("res");
 
-                try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                    System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                    insertNome(connection, localidade, nome, frequencia, rank);
-                } catch (SQLException e) {
-                    System.out.println("Erro ao conectar ao banco de dados");
-                    e.printStackTrace();
+                if (resArray != null && resArray.isArray() && resArray.size() > 0) {
+                    // Acesse o primeiro objeto dentro do array 'res'
+                    JsonNode firstObject = resArray.get(0);
+
+                    // Obtenha os valores dentro do objeto 'res'
+                    String nome = firstObject.get("nome").asText();
+                    int frequencia = firstObject.get("frequencia").asInt();
+                    int rank = firstObject.get("ranking").asInt();
+
+                    System.out.println("Localidade: " + localidade);
+                    System.out.println("Nome: " + nome);
+                    System.out.println("Frequencia: " + frequencia);
+                    System.out.println("Ranking: " + rank);
+
+                    try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+                        System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
+                        insertNome(connection, localidade, nome, frequencia, rank);
+                    } catch (SQLException e) {
+                        System.out.println("Erro ao conectar ao banco de dados");
+                        e.printStackTrace();
+                    }
+
+                    Nome nomee = new Nome(localidade, nome, frequencia, rank);
+                    nomes.add(nomee);
+                } else {
+                    System.out.println("Array 'res' vazio ou inexistente para o objeto: " + name);
                 }
-                Nome nomee = new Nome(localidade, nome, frequencia, rank);
-                //regiaoDAO.create(regiaoo);
-                nomes.add(nomee);
             }
             return nomes;
         }
@@ -108,13 +124,13 @@ public class NomesController {
         return nomes;
     }
 
-    private static void insertNome(Connection connection, String localidade ,String nome, int frequencia, int rank) {
-        String sql = "INSERT INTO local_names_db.nome (localidade, nome, frequencia, rank) VALUES (?, ?, ?, ?)";
+    private static void insertNome(Connection connection, String localidade ,String nome, int frequencia, int ranking) {
+        String sql = "INSERT INTO local_names_db.nome (localidade, nome, frequencia, ranking) VALUES (?, ?, ?, ?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, localidade);
             statement.setString(2, nome);
             statement.setInt(3, frequencia);
-            statement.setInt(4, rank);
+            statement.setInt(4, ranking);
             statement.executeUpdate();
             System.out.println("Nome inserido com sucesso!");
         } catch (SQLException e) {
