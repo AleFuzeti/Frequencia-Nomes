@@ -77,37 +77,4 @@ $(document).ready(function () {
             }
         });
     }
-
-    $('#myForm').submit(function (event) {
-        event.preventDefault();
-    
-        var selectedCity = $('#addressCidade').val();
-        var cidade = JSON.parse(selectedCity);
-        cidade = cidade.value1;
-    
-        if (selectedCity) {
-            // Ajuste a URL para incluir o parâmetro localidade
-            var apiUrl = '/api/nomes/nomes?localidade=' + cidade;
-    
-            $.ajax({
-                url: apiUrl,
-                dataType: 'json',
-                success: function (data) {
-                    var names = data;
-                    console.log('Nomes encontrados:', names);
-                    var namesList = $('#namesList');
-                    namesList.empty();
-                    names.forEach(function (name) {
-                        namesList.append('<li>' + name.nome + '</li>');
-                    });
-                },
-                error: function (error) {
-                    console.error('Erro na requisição à API:', error);
-                    $('#namesList').html('Erro na requisição à API: ' + JSON.stringify(error));
-                }
-            });
-        } else {
-            alert('Por favor, preencha todos os campos antes de enviar o formulário.');
-        }
-    });
 });

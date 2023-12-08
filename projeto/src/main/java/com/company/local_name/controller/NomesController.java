@@ -83,33 +83,25 @@ public class NomesController {
             System.out.println("Dados: " + nomesJsonArray);
             // inserir no banco de dados
             for (JsonNode name : nomesJsonArray) {
-                // Acesse o array 'res' dentro de cada objeto
                 JsonNode resArray = name.get("res");
 
-                if (resArray != null && resArray.isArray() && resArray.size() > 0) {
-                    // Acesse o primeiro objeto dentro do array 'res'
-                    JsonNode firstObject = resArray.get(0);
+                if (resArray != null && resArray.isArray()) {
+                    for (JsonNode nomeNode : resArray) {
+                        String nome = nomeNode.get("nome").asText();
+                        int frequencia = nomeNode.get("frequencia").asInt();
+                        int rank = nomeNode.get("ranking").asInt();
 
-                    // Obtenha os valores dentro do objeto 'res'
-                    String nome = firstObject.get("nome").asText();
-                    int frequencia = firstObject.get("frequencia").asInt();
-                    int rank = firstObject.get("ranking").asInt();
+                        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+                            System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
+                            insertNome(connection, localidade, nome, frequencia, rank);
+                        } catch (SQLException e) {
+                            System.out.println("Erro ao conectar ao banco de dados");
+                            e.printStackTrace();
+                        }
 
-                    System.out.println("Localidade: " + localidade);
-                    System.out.println("Nome: " + nome);
-                    System.out.println("Frequencia: " + frequencia);
-                    System.out.println("Ranking: " + rank);
-
-                    try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-                        System.out.println("Conexão com o banco de dados estabelecida com sucesso! Tentando inserir....");
-                        insertNome(connection, localidade, nome, frequencia, rank);
-                    } catch (SQLException e) {
-                        System.out.println("Erro ao conectar ao banco de dados");
-                        e.printStackTrace();
+                        Nome nomee = new Nome(localidade, nome, frequencia, rank);
+                        nomes.add(nomee);
                     }
-
-                    Nome nomee = new Nome(localidade, nome, frequencia, rank);
-                    nomes.add(nomee);
                 } else {
                     System.out.println("Array 'res' vazio ou inexistente para o objeto: " + name);
                 }

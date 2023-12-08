@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script th:src="@{home.js}" defer></script>
     <script th:src="@{relatorio.js}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 <body>
 
@@ -50,6 +52,7 @@
 
     <!-- Div para exibir o gráfico -->
     <canvas id="myChart"></canvas>
+    <div id="legend"></div>
 
     <!-- Botão para alternar entre gráficos -->
     <button id="toggleChart">Alternar Gráfico</button>
