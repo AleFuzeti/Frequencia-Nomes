@@ -56,17 +56,21 @@ public class LocalidadeControler {
             String query = "SELECT * FROM local_names_db.regiao";
             ResultSet resultSet = statement.executeQuery(query);
 
-            if (resultSet.next()) {
+            while (resultSet.next()) {
                 Regiao regiao = new Regiao(
                         resultSet.getString("id"),
                         resultSet.getString("nome"),
                         resultSet.getString("sigla")
                 );
                 regioes.add(regiao);
-            } else {
-                System.out.println("No region found");
+            }
+    
+            if (regioes.isEmpty()) {
+                System.out.println("No regions found");
                 regioes = populateRegioes(regioes);
             }
+            return regioes;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -83,7 +87,7 @@ public class LocalidadeControler {
             String query = "SELECT * FROM local_names_db.estado";
             ResultSet resultSet = statement.executeQuery(query);
 
-            if (resultSet.next()) {
+            while(resultSet.next()) {
                 Estado estado = new Estado(
                         resultSet.getString("id"),
                         resultSet.getString("nome"),
@@ -91,10 +95,13 @@ public class LocalidadeControler {
                         resultSet.getString("sigla_reg")
                 );
                 estados.add(estado);
-            } else {
-                System.out.println("No state found");
+            } 
+            if (estados.isEmpty()) {
+                System.out.println("No states found");
                 estados = populateStates(estados);
             }
+            return estados;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -111,17 +118,20 @@ public class LocalidadeControler {
             String query = "SELECT * FROM local_names_db.cidade";
             ResultSet resultSet = statement.executeQuery(query);
 
-            if (resultSet.next()) {
+            while(resultSet.next()) {
                 Cidade cidade = new Cidade(
                         resultSet.getString("id"),
                         resultSet.getString("nome"),
                         resultSet.getString("sigla_estado")
                 );
                 cidades.add(cidade);
-            } else {
-                System.out.println("No city found");
+            }
+            if (cidades.isEmpty()) {
+                System.out.println("No cities found");
                 cidades = populateCities(cidades);
             }
+            return cidades;
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
