@@ -52,5 +52,20 @@ $(document).ready(function () {
 
         // Atualiza o gráfico
         myChart.update();
+
+        // Botão para alternar entre gráficos
+        $('#toggleChart').click(function () {
+            // Verifica o tipo atual do gráfico e alterna
+            if (myChart.config.type === 'bar') {
+                // Alterna para gráfico de pizza
+                myChart.config.type = 'pie';
+            } else {
+                // Alterna para gráfico de coluna
+                myChart.config.type = 'bar';
+            }
+
+            // Atualiza o gráfico
+            myChart.update();
+        });
     });
 });
