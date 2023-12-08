@@ -1,48 +1,85 @@
 $(document).ready(function () {
     // Popule a lista de estados (substitua com seus dados reais)
+    var regions = [];
     var states = [];
     var cities = [];
 
-    // Carregue os estados do endpoint usando AJAX
+    // Carregue as regiões do endpoint usando AJAX
     $.ajax({
-        url: '/api/localidades/estados',
+        url: '/api/localidades/regioes',
         dataType: 'json',
         success: function (data) {
-            // Atribua os dados carregados à variável states
-            var states = data;
+            // Atribua os dados carregados à variável regions
+            regions = data;
 
-            // Popule a lista de estados no elemento select
-            var stateSelect = $('#addressEstado');
-            states.forEach(function (state) {
-                stateSelect.append('<option value="' + state.id + '">' + state.nome + '</option>');
+            // Popule a lista de regiões no elemento select
+            var regionSelect = $('#addressRegiao');
+            regions.forEach(function (region) {
+                regionSelect.append('<option value="' + region.id + '">' + region.nome + '</option>');
             });
-
-            // Adicione o manipulador de mudança para atualizar as cidades
-            stateSelect.on('change', function () {
-                setCities();
+            
+            // Adicione o manipulador de mudança para atualizar os estados
+            regionSelect.on('change', function () {
+                setStates();
             });
         },
         error: function (error) {
-            console.error('Erro ao carregar estados:', error);
+            console.error('Erro ao carregar regiões:', error);
         }
     });
+
+    // Função para definir os estados
+    function setStates() {
+        var regionId = $('#addressRegiao').val();
+
+        // Carregue os estados do endpoint usando AJAX
+        $.ajax({
+            url: '/api/localidades/estados',
+            dataType: 'json',
+            success: function (data) {
+                // Atribua os dados carregados à variável states
+                states = data;
+
+                // Filtrar estados pelo ID da região selecionada
+                var filteredStates = states.filter(function (state) {
+                    return state.regiao.id == regionId;
+                });
+
+                // Popule a lista de estados no elemento select
+                var stateSelect = $('#addressEstado');
+                stateSelect.empty(); // Limpe as opções anteriores
+                stateSelect.append('<option value="">Selecione</option>'); // Adicione a opção padrão
+
+                filteredStates.forEach(function (state) {
+                    stateSelect.append('<option value="' + state.id + '">' + state.nome + '</option>');
+                });
+
+                // Adicione o manipulador de mudança para atualizar as cidades
+                stateSelect.on('change', function () {
+                    setCities();
+                });
+            },
+            error: function (error) {
+                console.error('Erro ao carregar estados:', error);
+            }
+        });
+    }
 
     // Função para definir as cidades
     function setCities() {
         var stateId = $('#addressEstado').val();
 
-        // Carregue as cidades do arquivo JSON usando AJAX
+        // Carregue as cidades do endpoint usando AJAX
         $.ajax({
-            url: '/data/municipios_tratados.json',
+            url: '/api/localidades/cidades',
             dataType: 'json',
             success: function (data) {
                 // Atribua os dados carregados à variável cities
                 cities = data;
 
-                // Filtrar cidades pelo estado selecionado
+                // Filtrar cidades pelo ID do estado selecionado
                 var filteredCities = cities.filter(function (city) {
-                    // Verifique se os primeiros dígitos do ID da cidade correspondem ao ID do estado
-                    return city.id.toString().startsWith(stateId);
+                    return city.microrregiao.mesorregiao.UF.id == stateId;
                 });
 
                 // Popule a lista de cidades no elemento select
