@@ -5,10 +5,11 @@ import com.company.local_name.model.Nome;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Optional;
 
 public class PgNomeDAO implements NomeDAO{
     private Connection connection;
@@ -38,6 +39,23 @@ public class PgNomeDAO implements NomeDAO{
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
             throw new SQLException("Erro ao criar nome");
+        }
+    }
+
+    @Override
+    public Optional<Nome> findById(String cidade) throws SQLException {
+        String query = "SELECT * FROM local_names_db.nome WHERE localidade = ? AND nome = ?";
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setString(1, cidade);
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return Optional.of(new Nome(resultSet.getString("localidade"), resultSet.getString("nome"),
+                            resultSet.getInt("frequencia"), resultSet.getInt("rank")));
+                } else {
+                    return Optional.empty();
+                }
+            }
         }
     }
 
@@ -104,5 +122,5 @@ public class PgNomeDAO implements NomeDAO{
             System.err.println(ex.getMessage());
             throw new SQLException("Erro ao deletar nome");
         }
-    } 
+    }
 }
