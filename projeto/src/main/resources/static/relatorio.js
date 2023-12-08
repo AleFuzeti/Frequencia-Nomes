@@ -39,7 +39,12 @@ $(document).ready(function () {
         // Obtem os dados do formulário
         var regiao = $('#addressRegiao').val();
         var estado = $('#addressEstado').val();
-        var cidade = $('#addressCidade').name;
+        var cidade = $('#addressCidade').val();
+
+        // Converter a string JSON em um objeto JavaScript
+        cidade = JSON.parse(cidade);
+
+        cidade = cidade.value2;
 
         // Adiciona os dados ao gráfico
         myChart.data.labels.push(regiao + ' - ' + estado + ' - ' + cidade);

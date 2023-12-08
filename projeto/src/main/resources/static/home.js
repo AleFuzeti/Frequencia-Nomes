@@ -69,7 +69,7 @@ $(document).ready(function () {
                 citySelect.append('<option value="">Selecione</option>');
 
                 filteredCities.forEach(function (city) {
-                    citySelect.append('<option value=\'{"value1": "'+ city.id + '","value2":"'+city.nome+'"} >' + city.nome + '</option>');
+                    citySelect.append('<option value=\'{"value1": "' + city.id + '","value2":"' + city.nome + '"}\'' + '>' + city.nome + '</option>');
                 });
             },
             error: function (error) {
