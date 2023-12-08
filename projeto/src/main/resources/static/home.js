@@ -3,13 +3,13 @@ $(document).ready(function () {
     var states = [];
     var cities = [];
 
-    // Carregue os estados do arquivo JSON usando AJAX
+    // Carregue os estados do endpoint usando AJAX
     $.ajax({
-        url: '/data/estados_tratados.json',
+        url: '/api/localidades/estados',
         dataType: 'json',
         success: function (data) {
             // Atribua os dados carregados à variável states
-            states = data;
+            var states = data;
 
             // Popule a lista de estados no elemento select
             var stateSelect = $('#addressEstado');
