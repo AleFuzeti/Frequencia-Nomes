@@ -29,24 +29,17 @@ $(document).ready(function () {
             url: '/api/localidades/estados',
             dataType: 'json',
             success: function (data) {
-                states = data;
-                console.log('Estados:', states);
-
-                console.log('Sigla da região:', regionSigla);
-
+                states = data;;
                 var filteredStates = states.filter(function (state) {
-                    console.log('State.sigla_region:', state.sigla_region);
                     return state.sigla_regiao == regionSigla;
                 });
-
-                console.log('Estados filtrados:', filteredStates);
 
                 var stateSelect = $('#addressEstado');
                 stateSelect.empty();
                 stateSelect.append('<option value="">Selecione</option>');
 
                 filteredStates.forEach(function (state) {
-                    stateSelect.append('<option value="' + state.id + '">' + state.nome + '</option>');
+                    stateSelect.append('<option value="' + state.sigla + '">' + state.nome + '</option>');
                 });
 
                 stateSelect.on('change', function () {
@@ -60,7 +53,7 @@ $(document).ready(function () {
     }
 
     function setCities() {
-        var stateId = $('#addressEstado').val();
+        var stateSigla = $('#addressEstado').val();
         $.ajax({
             url: '/api/localidades/cidades',
             dataType: 'json',
@@ -68,7 +61,7 @@ $(document).ready(function () {
                 cities = data;
 
                 var filteredCities = cities.filter(function (city) {
-                    return city.regiao-imediata.regiao-intermediaria.uf.id == stateId;
+                    return city.sigla_estado == stateSigla;
                 });
 
                 var citySelect = $('#addressCidade');
