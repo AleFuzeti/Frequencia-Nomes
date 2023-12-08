@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -31,16 +32,16 @@ import java.util.List;
 @Component
 public class LocalidadeControler {
 
-    private PgRegiaoDAO regiaoDAO;
-    private PgEstadoDAO estadoDAO;
-    private PgCidadeDAO cidadeDAO;
+    // private PgRegiaoDAO regiaoDAO;
+    // private PgEstadoDAO estadoDAO;
+    // private PgCidadeDAO cidadeDAO;
 
-    @Autowired
-    public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
-        this.regiaoDAO = regiaoDAO;
-        this.estadoDAO = estadoDAO;
-        this.cidadeDAO = cidadeDAO;
-    }
+    // @Autowired
+    // public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
+    //     this.regiaoDAO = regiaoDAO;
+    //     this.estadoDAO = estadoDAO;
+    //     this.cidadeDAO = cidadeDAO;
+    // }
 
     @GetMapping("/regioes")
     public List<Regiao> getRegioes() {
@@ -156,8 +157,23 @@ public class LocalidadeControler {
                 String nome = regiao.get("nome").asText();
                 String sigla = regiao.get("sigla").asText();
 
+                String url = "jdbc:postgresql://sicm.dc.uel.br:5432/matheus";
+                String user = "matheus";
+                String password = "bd23";
+                try (Connection connection = DriverManager.getConnection(url, user, password)) {
+                    String sql = "INSERT INTO local_names_db.regiao (id, sigla, nome) VALUES (?, ?, ?)";
+
+                    try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                        statement.setString(1, id);
+                        statement.setString(2, sigla);
+                        statement.setString(3, nome);
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
                 Regiao regiaoo = new Regiao(id, nome, sigla);
-                regiaoDAO.create(regiaoo);
+                //regiaoDAO.create(regiaoo);
                 regioes.add(regiaoo);
             }
         }
@@ -181,8 +197,23 @@ public class LocalidadeControler {
                 String sigla = estado.get("sigla").asText();
                 String sigla_reg = estado.get("regiao").get("sigla").asText();
 
+                String url = "jdbc:postgresql://sicm.dc.uel.br:5432/matheus";
+                String user = "matheus";
+                String password = "bd23";
+                try (Connection connection = DriverManager.getConnection(url, user, password)) {
+                    String sql = "INSERT INTO local_names_db.estado (id, nome, sigla, sigla_reg) VALUES (?, ?, ?, ?)";
+                    try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                        statement.setString(1, id);
+                        statement.setString(2, nome);
+                        statement.setString(3, sigla);
+                        statement.setString(4, sigla_reg);
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
                 Estado estadoo = new Estado(id, nome, sigla, sigla_reg);
-                estadoDAO.create(estadoo);
+                //estadoDAO.create(estadoo);
                 estados.add(estadoo);
             }
         }
@@ -225,8 +256,17 @@ public class LocalidadeControler {
                     String nome = municipio.get("nome").asText();
                     String sigla_estado = municipio.get("microrregiao").get("mesorregiao").get("UF").get("sigla").asText();
 
+                    String sql = "INSERT INTO local_names_db.cidade (id, nome, sigla_estado) VALUES (?, ?, ?)";
+                    try (PreparedStatement statement2 = connection.prepareStatement(sql)) {
+                        statement2.setString(1, id);
+                        statement2.setString(2, nome);
+                        statement2.setString(3, sigla_estado);
+                    }
+                    catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                     Cidade cidade = new Cidade(id, nome, sigla_estado);
-                    cidadeDAO.create(cidade);
+                    //cidadeDAO.create(cidade);
                     cidades.add(cidade);
                 }
             }
