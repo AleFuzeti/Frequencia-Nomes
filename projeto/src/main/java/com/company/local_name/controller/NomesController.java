@@ -80,7 +80,7 @@ public class NomesController {
             String nomesResponse = HttpUtil.fetchDataFromAPI(nomesUrl);
             JsonNode regioesJsonArray = prettyObjectMapper.readTree(nomesResponse);
             System.out.println("Dados dos nomes corretos!! Tentativa de conectar ao banco.....");
-
+            System.out.println("Dados: " + regioesJsonArray);
             // inserir no banco de dados
             for (JsonNode name : regioesJsonArray) {
                 String nome = name.get("nome").asText();
@@ -101,7 +101,7 @@ public class NomesController {
             return nomes;
         }
         catch(Exception e){
-            System.out.println("Erro ao buscar api de região");
+            System.out.println("Erro ao buscar api de nomes");
             e.printStackTrace();
         }
 
