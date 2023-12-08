@@ -82,10 +82,12 @@ $(document).ready(function () {
         event.preventDefault();
     
         var selectedCity = $('#addressCidade').val();
+        var cidade = JSON.parse(selectedCity);
+        cidade = cidade.value1;
     
         if (selectedCity) {
             // Ajuste a URL para incluir o parâmetro localidade
-            var apiUrl = '/api/nomes/nomes?localidade=' + selectedCity.value1;
+            var apiUrl = '/api/nomes/nomes?localidade=' + cidade;
     
             $.ajax({
                 url: apiUrl,
