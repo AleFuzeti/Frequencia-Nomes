@@ -1,5 +1,6 @@
 package com.company.local_name.controller;
 
+import com.company.local_name.controller.utils.HttpUtil;
 import com.company.local_name.DAO.impl.PgRegiaoDAO;
 import com.company.local_name.DAO.impl.PgEstadoDAO;
 import com.company.local_name.DAO.impl.PgCidadeDAO;
@@ -30,9 +31,9 @@ import java.util.List;
 @Component
 public class LocalidadeControler {
 
-    private final PgRegiaoDAO regiaoDAO;
-    private final PgEstadoDAO estadoDAO;
-    private final PgCidadeDAO cidadeDAO;
+    private PgRegiaoDAO regiaoDAO;
+    private PgEstadoDAO estadoDAO;
+    private PgCidadeDAO cidadeDAO;
 
     @Autowired
     public LocalidadeControler(PgRegiaoDAO regiaoDAO, PgEstadoDAO estadoDAO, PgCidadeDAO cidadeDAO) {
@@ -40,6 +41,7 @@ public class LocalidadeControler {
         this.estadoDAO = estadoDAO;
         this.cidadeDAO = cidadeDAO;
     }
+
     @GetMapping("/regioes")
     public List<Regiao> getRegioes() {
         List<Regiao> regioes = new ArrayList<>();
